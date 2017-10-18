@@ -34,10 +34,12 @@ function menuDropdown() {
   $(button).click(function () {
     if (index == false) {
       $(dropdown).addClass('dropdown-header_droped')
+      $(button).addClass('navigation__item-drop--active')
       $(arrow).addClass('navigation__item-arrow--active')
       index = true
     }else{
       $(dropdown).removeClass('dropdown-header_droped')
+      $(button).removeClass('navigation__item-drop--active')
       $(arrow).removeClass('navigation__item-arrow--active')
       index = false      
     }
@@ -67,13 +69,18 @@ basketDropdown()
 function mobileDropdown() {
   var button = $('.mobile'),
       dropdown = $('.dropdown-mobile'),
+      arrow = $('.mobile__arrow'),
       index = false;
   $(button).click(function () {
     if (index == false) {
       $(dropdown).addClass('dropdown-mobile_droped')
+      $(button).addClass('mobile--active')
+      $(arrow).addClass('mobile__arrow--active')
       index = true
     }else{
       $(dropdown).removeClass('dropdown-mobile_droped')
+      $(button).removeClass('mobile--active')
+      $(arrow).removeClass('mobile__arrow--active')
       index = false      
     }
   })
