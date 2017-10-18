@@ -1,0 +1,61 @@
+.how-this-work
+	&__items
+		margin-top 44px
+		display flex
+		justify-content space-between
+	&__item
+		display flex
+		max-width 200px
+		align-items center
+		img
+			margin-right 20px
+		p
+			font-size 18px
+			font-weight 400
+			line-height 20px
+	&__slider
+		margin-top 55px
+		width 100%
+	&__slide
+		height 297px
+		display flex
+		flex-direction column
+		background-size cover
+		justify-content center
+		align-items center
+		h2
+			display inline-block
+			font-size 40px
+			font-weight 700
+		&__btn
+			margin-top 20px
+			color white
+			background-color $main
+			padding 22px 52px
+			font-size 20px
+			font-weight 400
+	&__pagination
+		width 100%
+		height 297px
+		top 0
+		left 0
+		z-index 2
+		position absolute
+		display flex
+		align-items center
+		.wrap
+			display flex
+			justify-content space-between
+			padding-left 0
+		&__left
+			margin-left 28px
+			cursor pointer
+			&.swiper-button-disabled
+				opacity 0.2
+				cursor default
+		&__right
+			margin-right 28px
+			cursor pointer
+			&.swiper-button-disabled
+				opacity 0.2
+				cursor default

@@ -1,0 +1,51 @@
+.welcome-slider
+	width 100%
+	height 100vh
+	&__slide
+		width 100%
+		height 100vh
+		background-size cover
+		justify-content flex-start
+		.wrap
+			text-align left
+			padding-left 100px
+		h1
+			font-size 70px
+			font-weight 700
+		p
+			font-size 30px
+			font-weight 400
+			margin-top 13px
+		&__btn
+			display inline-block
+			margin-top 34px
+			color white
+			background-color $main
+			padding 25px 26px
+			font-size 22px
+			font-weight 700
+	&__pagination
+		width 100%
+		height 100vh
+		top 0
+		left 0
+		z-index 2
+		position absolute
+		display flex
+		align-items center
+		.wrap
+			display flex
+			justify-content space-between
+			padding-left 0
+		&__left
+			margin-left -40px
+			cursor pointer
+			&.swiper-button-disabled
+				opacity 0.2
+				cursor default
+		&__right
+			margin-right -40px
+			cursor pointer
+			&.swiper-button-disabled
+				opacity 0.2
+				cursor default
