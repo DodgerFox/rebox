@@ -1,76 +1,78 @@
 header.header
-	.box
-		.header__logo
-			a.header__logo__link(href="/")
-				img.header__logo__image(src="assets/images/logo.png")
-		nav.header__navigation
-			ul.header__navigation__list
-				li.header__navigation__item.header__navigation__item-drop
-					img(src="assets/images/arrow-top.png").header__navigation__item-arrow
-					.header__navigation__link Меню
-				li.header__navigation__item
-					a.header__navigation__link(href="#") Как это работает
-				li.header__navigation__item
-					a.header__navigation__link(href="#") Доставка и оплата
-				li.header__navigation__item
-					a.header__navigation__link(href="#") Сертификаты
-				li.header__navigation__item
-					a.header__navigation__link(href="#") О сервисе
+	.header__wrap
+		.box
+			.header__logo.logo
+				a.logo__link(href="/")
+					img.logo__image(src="assets/images/logo.png")
+			nav.header__navigation.navigation
+				ul.navigation__list
+					li.navigation__item.navigation__item-drop
+						img(src="assets/images/arrow-top.png").navigation__item-arrow
+						.navigation__link Меню
+					li.navigation__item
+						a.navigation__link(href="#") Как это работает
+					li.navigation__item
+						a.navigation__link(href="#") Доставка и оплата
+					li.navigation__item
+						a.navigation__link(href="#") Сертификаты
+					li.navigation__item
+						a.navigation__link(href="#") О сервисе
 
+			.mobile
+				img.mobile__icon(src="assets/images/phone.png")
+				.mobile__wrap
+					.mobile__title 316-01-01
+					.mobile__text мтс, velcom
+			.account
+				a.account__link(href="#")
+					img.account__icon(src="assets/images/user.png")
+			.basket
+				.basket__link
+					img.basket__icon(src="assets/images/basket.png")
+					.basket__circle 2
 
-		.header__mobile
-			img.header__mobile__icon(src="assets/images/phone.png")
-			.header__mobile__wrap
-				.header__mobile__title 316-01-01
-				.header__mobile__text мтс, velcom
-		.header__account
-			a.header__account__link(href="#")
-				img.header__account__icon(src="assets/images/user.png")
-		.header__basket
-			.header__basket__link
-				img.header__basket__icon(src="assets/images/basket.png")
-				.header__basket__circle 2
-
-.dropdown-header
-	.box
-		a.dropdown-header__link(href="#")
-			img.dropdown-header__icon(src="assets/images/icon-catering.png")
-			.dropdown-header__text Ужины на неделю
-		a.dropdown-header__link(href="#")
-			img.dropdown-header__icon(src="assets/images/icon-take-away.png")
-			.dropdown-header__text Пробный Rebox
-		a.dropdown-header__link(href="#")
-			img.dropdown-header__icon(src="assets/images/icon-carrot.png")
-			.dropdown-header__text Вегетарианский сет
-.box
-	.header__mobile-drop.mobile-drop
-		.mobile-drop__button Заказать звонок
-		.mobile-drop__text Мы перезвоним вам в рабочее время с 09:00 до 17:30
-		.mobile-drop__title Напишите нам:
-		.mobile-drop__items
-			a.mobile-drop__items__link(href="#") +375 (29) 316-01-01
-			a.mobile-drop__items__link(href="#")
-				img.mobile-drop__items__icon(src="assets/images/icon-telegram.png")
-			a.mobile-drop__items__link(href="#")
-				img.mobile-drop__items__icon(src="assets/images/icon-viber.png")
-		.mobile-drop__mail
-			a.mobile-drop__mail__link(href="#")
-				img.mobile-drop__mail__icon(src="assets/images/icon-mail.png")
-				.mobile-drop__mail__text info@rebox.by
-.box
-	.basket-drop
-		.basket-drop__title Корзина
-		.basket-drop__item
-			.basket-drop__subtitle Куриные крылья в маринаде
-			.basket-drop__text 30,50 руб.
-		.basket-drop__item
-			.basket-drop__subtitle Куриные крылья в маринаде
-			.basket-drop__text 30,50 руб.
-		.basket-drop__item.basket-drop-footer
-			.basket-drop-footer__item
-				.basket-drop-footer__item__title Доставка
-				.basket-drop-footer__text 5 руб.
-			.basket-drop-footer__item.basket-drop-footer__item-result
-				.basket-drop-footer__item__title Итого с доставкой
-				.basket-drop-footer__text 61 руб.
-			a(href="#").basket-drop-footer__btn Перейти к оплате
+	.dropdown-header
+		.box
+			a.dropdown-header__link(href="#")
+				img.dropdown-header__icon(src="assets/images/icon-catering.png")
+				.dropdown-header__text Ужины на неделю
+			a.dropdown-header__link(href="#")
+				img.dropdown-header__icon(src="assets/images/icon-take-away.png")
+				.dropdown-header__text Пробный Rebox
+			a.dropdown-header__link(href="#")
+				img.dropdown-header__icon(src="assets/images/icon-carrot.png")
+				.dropdown-header__text Вегетарианский сет
+	.dropdown
+		.box
+			.dropdown-mobile
+				.dropdown-mobile__button Заказать звонок
+				.dropdown-mobile__text Мы перезвоним вам в рабочее время с 09:00 до 17:30
+				.dropdown-mobile__title Напишите нам:
+				.dropdown-mobile__items
+					a.dropdown-mobile__items-link(href="#") +375 (29) 316-01-01
+					a.dropdown-mobile__items-link(href="#")
+						img.dropdown-mobile__items-icon(src="assets/images/icon-telegram.png")
+					a.dropdown-mobile__items-link(href="#")
+						img.dropdown-mobile__items-icon(src="assets/images/icon-viber.png")
+				.dropdown-mobile__mail
+					a.dropdown-mobile__mail-link(href="#")
+						img.dropdown-mobile__mail-icon(src="assets/images/icon-mail.png")
+						.dropdown-mobile__mail-text info@rebox.by
+	.dropdown
+		.box
+			.basket-drop
+				.basket-drop__title Корзина
+				.basket-drop__item
+					.basket-drop__subtitle Куриные крылья в маринаде
+					.basket-drop__text 30,50 руб.
+				.basket-drop__item
+					.basket-drop__subtitle Куриные крылья в маринаде
+					.basket-drop__text 30,50 руб.
+				.basket-drop__item.basket-drop-footer
+					.basket-drop-footer__item
+						.basket-drop-footer__title Доставка
+						.basket-drop-footer__text 5 руб.
+					.basket-drop-footer__item.basket-drop-footer__item-result
+						.basket-drop-footer__title Итого с доставкой
+						.basket-drop-footer__text 61 руб.
+					a(href="#").basket-drop-footer__btn Перейти к оплате

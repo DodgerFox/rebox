@@ -1,7 +1,7 @@
-.header__mobile-drop
+.dropdown-mobile
 	display block
 	position absolute
-	top -280px
+	top 0px
 	right 200px
 	border 1px solid #dbdce1
 	width 254px
@@ -9,9 +9,9 @@
 	padding 20px
 	z-index 18
 	transition 0.4s transform
+	transform translateY(-363px)
 	&_droped
-		transform translateY(363px)
-.mobile-drop
+		transform translateY(0px)
 	&__button
 		width 100%
 		padding 17px 36px
@@ -42,7 +42,7 @@
 		display flex
 		justify-content space-between
 		align-items center
-		&__link
+		&-link
 			font-size 17px
 			font-weight 700
 			color black
@@ -50,10 +50,10 @@
 		border-top 1px solid #ededed
 		padding-top 18px
 		margin-top 16px
-		&__link
+		&-link
 			display flex
 			align-items center
-		&__text
+		&-text
 			margin-left 14px
 			margin-top 0
 			font-size 16px

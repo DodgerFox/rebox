@@ -14,13 +14,7 @@ html
 	color black
 	margin-left auto
 	margin-right auto
-	&.fixed-window
-		overflow-y hidden
-	+to-width(1024px)
-		min-width 320px
 
-	+to-width(365px)
-		overflow-x hidden
 
 section
 	font-size 1.6rem
@@ -28,23 +22,9 @@ section
 
 .box
 	position relative
-	width 1400px
+	max-width 1400px
 	margin-left auto
 	margin-right auto
-	+to-width(1520px)
-		width 1280px
-	+to-width(1400px)
-		width 1024px
-	
-	+to-width(960px)
-		padding 0 20px
-
-	+to-width(784px)
-		width 100%
-		padding 0 20px
-
-	+to-width(550px)
-		padding 0 20px
 	&-mini
 		width 844px
 
@@ -64,72 +44,3 @@ section
 			color #b99359
 			&:hover
 				text-decoration underline
-	.section__text
-		color #414141
-		font-size 16px
-		padding-bottom 53px
-		font-family Bold
-
-.is-sticky
-	header.header
-		background-color #303030
-
-.tags
-	display flex
-	margin-top 10px
-	margin-left -1px
-	.tags__tag
-		color white
-		padding 4px 15px
-		font-size 12px
-		margin-right 8px
-		border-radius 50px
-		background-color #7ed321
-		&.tags__tag_design
-			background-color #7ed321
-		&.tags__tag_frontend
-			background-color #fee23c
-			color black
-		&.tags__tag_backend
-			background-color #2c9cfc
-		&.tags__tag_designing
-			background-color #b79d82
-		
-
-.simple-button
-	width 180px
-	font-size 16px
-	height 40px
-	font-family Bold
-	display flex
-	justify-content center
-	align-items center
-	border-radius 50px
-		
-.section__mobile-wrap
-	width 100%
-	display flex
-	justify-content space-between
-	display none
-	+to-width(860px)
-		display flex
-	p.section__mobile-logo
-		color black
-		font-family Black
-		font-size 23px
-	.section__close
-		.section__close-button
-			cursor pointer
-			width 20px
-			height 20px
-			position relative
-			.section__close-button__line
-				width 20px
-				height 2px
-				position absolute
-				top 9px
-				left 0
-				transform rotate(45deg)
-				background-color #25282d
-				&:last-child
-					transform rotate(-45deg)

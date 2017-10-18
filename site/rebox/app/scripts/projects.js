@@ -27,18 +27,18 @@ var swiper = new Swiper('.our-cooks__slider', {
 
 
 function menuDropdown() {
-  var button = $('li.header__navigation__item-drop'),
+  var button = $('li.navigation__item-drop'),
       dropdown = $('.dropdown-header'),
-      arrow = $('.header__navigation__item-arrow'),
+      arrow = $('.navigation__item-arrow'),
       index = false;
   $(button).click(function () {
     if (index == false) {
       $(dropdown).addClass('dropdown-header_droped')
-      $(arrow).addClass('header__navigation__item-arrow--active')
+      $(arrow).addClass('navigation__item-arrow--active')
       index = true
     }else{
       $(dropdown).removeClass('dropdown-header_droped')
-      $(arrow).removeClass('header__navigation__item-arrow--active')
+      $(arrow).removeClass('navigation__item-arrow--active')
       index = false      
     }
   })
@@ -46,7 +46,7 @@ function menuDropdown() {
 menuDropdown()
 
 function basketDropdown() {
-  var button = $('.header__basket__link'),
+  var button = $('.basket__link'),
       dropdown = $('.basket-drop'),
       arrow = $('.header__navigation__item-arrow'),
       index = false;
@@ -65,15 +65,15 @@ function basketDropdown() {
 basketDropdown()
 
 function mobileDropdown() {
-  var button = $('.header__mobile'),
-      dropdown = $('.header__mobile-drop'),
+  var button = $('.mobile'),
+      dropdown = $('.dropdown-mobile'),
       index = false;
   $(button).click(function () {
     if (index == false) {
-      $(dropdown).addClass('header__mobile-drop_droped')
+      $(dropdown).addClass('dropdown-mobile_droped')
       index = true
     }else{
-      $(dropdown).removeClass('header__mobile-drop_droped')
+      $(dropdown).removeClass('dropdown-mobile_droped')
       index = false      
     }
   })
