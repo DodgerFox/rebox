@@ -1,33 +1,33 @@
 .dropdown-header
 	height 100px
 	width 100%
-	background-color white
+	background-color #f9f9f9
 	position absolute
-	border-top 1px solid #dbdce1
 	top -20px
 	z-index 18
 	left 0
 	t()
 	&.dropdown-header_droped
-		transform translateY(102px)
-	.wrap
+		transform translateY(103px)
+	.box
 		display flex
 		align-items center
 		justify-content center
 		height 100%
-	a
+	&__link
 		margin-right 48px
 		display flex
 		align-items center
-		img
-			margin-right 16px
-		p
-			font-size 16px
-			font-weight 400
-			color black
-			t()
 		&:last-child
 			margin-right 0
 		&:hover
 			p
 				color #b99359
+	&__icon
+		margin-right 16px
+	&__text
+		font-size 16px
+		font-weight 400
+		color black
+		t()
+		

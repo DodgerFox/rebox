@@ -3,13 +3,19 @@ extends ../layouts/default
 block head
 
 block content
-	include ../blocks/header
-	include ../blocks/welcome-slider
-	include ../blocks/how-this-work
-	include ../blocks/action-belt
-	include ../blocks/footer-nav
-	include ../blocks/footer
-	include ../blocks/footer-logos
+	.wrapper
+		include ../blocks/header
+		.main
+			include ../blocks/welcome-slider
+			include ../blocks/how-this-work
+			include ../blocks/action-belt
+			include ../blocks/why-yes
+			include ../blocks/our-cooks
+			include ../blocks/feedbacks
+		footer.footer
+			include ../blocks/footer-nav
+			include ../blocks/footer
+			include ../blocks/footer-logos
 
 
 	script(src="assets/scripts/libs/jquery/dist/jquery.min.js")

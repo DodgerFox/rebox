@@ -5,51 +5,62 @@
 	z-index 20
 	width 100%
 	padding 14px 0
+	border-bottom 1px solid #dbdce1
 	background white
-	.wrap
+	.box
 		display flex
 		justify-content space-between
 		align-items center
 		height 100%
 	&__navigation
-		ul
+		&__list
 			display flex
 			justify-content space-between
 			font-size 16px
 			font-weight 400
-			li
-				margin-right 30px
-				position relative
-				cursor pointer
-				&:last-child
-					margin-right 0
+		&__item
+			margin-right 30px
+			position relative
+			cursor pointer
+			&:last-child
+				margin-right 0
+			&:after
+				content ''
+				position absolute
+				left 0
+				bottom -7px
+				height 4px
+				width 0
+				background-color $secondary
+				t()
+			&:hover
 				&:after
+					width 100%
+			&-drop
+				&:before
 					content ''
 					position absolute
-					left 0
-					bottom -7px
+					width 8px
 					height 4px
-					width 0
-					background-color #b99359
-					t()
-				&:hover
-					&:after
-						width 100%
-				&.header__navigation__item-drop
-					&:before
-						content ''
-						position absolute
-						width 8px
-						height 4px
-						right -12px
-						top 7px
-						background-image url('../images/arrow-bottom.png')		
-			a
-				color black
+					right -12px
+					top 7px
+					background-image url('../images/arrow-bottom.png')
+			&-arrow
+				position absolute
+				left 0
+				bottom -40px
+				opacity 0
+				t()
+				&--active
+					opacity 1
+					bottom -34px
+		&__link
+			color black
 	&__mobile
 		display flex
 		align-items center
 		position relative
+		cursor pointer
 		&:before
 			content ''
 			position absolute
@@ -60,13 +71,29 @@
 			background-image url('../images/arrow-bottom.png')
 		&__wrap
 			margin-left 11px
-			h6
-				font-size 25px
-				font-weight 700
-			p
-				color #777777
-				font-size 14px
-				font-weight 400
-	&__bucket
-		&-drop
-			display none
+		&__title
+			font-size 25px
+			font-weight 700
+		&__text
+			color #777777
+			font-size 14px
+			font-weight 400
+	&__basket
+		position relative
+		&__link
+			cursor pointer
+		&__circle
+			width 20px
+			height 20px
+			background-color $main
+			border-radius 50%
+			position absolute
+			top 0px
+			right -18px
+			display flex
+			justify-content center
+			align-items center
+			color white
+			font-size 12px
+			padding-top 2px
+			font-family Bold

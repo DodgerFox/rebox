@@ -1,68 +1,76 @@
 header.header
-	.wrap
+	.box
 		.header__logo
-			a(href="/")
-				img(src="assets/images/logo.png")
+			a.header__logo__link(href="/")
+				img.header__logo__image(src="assets/images/logo.png")
 		nav.header__navigation
-			ul
-				li.header__navigation__item-drop
-					p Меню
-				li
-					a(href="#") Как это работает
-				li
-					a(href="#") Доставка и оплата
-				li
-					a(href="#") Сертификаты
-				li
-					a(href="#") О сервисе
+			ul.header__navigation__list
+				li.header__navigation__item.header__navigation__item-drop
+					img(src="assets/images/arrow-top.png").header__navigation__item-arrow
+					.header__navigation__link Меню
+				li.header__navigation__item
+					a.header__navigation__link(href="#") Как это работает
+				li.header__navigation__item
+					a.header__navigation__link(href="#") Доставка и оплата
+				li.header__navigation__item
+					a.header__navigation__link(href="#") Сертификаты
+				li.header__navigation__item
+					a.header__navigation__link(href="#") О сервисе
 
 
 		.header__mobile
-			img(src="assets/images/phone.png")
+			img.header__mobile__icon(src="assets/images/phone.png")
 			.header__mobile__wrap
-				h6 316-01-01
-				p мтс, velcom
+				.header__mobile__title 316-01-01
+				.header__mobile__text мтс, velcom
 		.header__account
-			a(href="#")
-				img(src="assets/images/user.png")
-		.header__bucket
-			a(href="#")
-				img(src="assets/images/basket.png")
-			.header__bucket-drop
-				h4 Корзина
-				.header__bucket-drop__item
-					h6 Куриные крылья в маринаде
-					p 30,50 руб.
-				.header__bucket-drop__item
-					h6 Куриные крылья в маринаде
-					p 30,50 руб.
-				.header__bucket-drop__footer
-					h6 Куриные крылья в маринаде
-					p 30,50 руб.
-					.header__bucket-drop__btn Перейти к оплате
+			a.header__account__link(href="#")
+				img.header__account__icon(src="assets/images/user.png")
+		.header__basket
+			.header__basket__link
+				img.header__basket__icon(src="assets/images/basket.png")
+				.header__basket__circle 2
+
 .dropdown-header
-	.wrap
-		a(href="#")
-			img(src="assets/images/icon-catering.png")
-			p Ужины на неделю
-		a(href="#")
-			img(src="assets/images/icon-take-away.png")
-			p Пробный Rebox
-		a(href="#")
-			img(src="assets/images/icon-carrot.png")
-			p Вегетарианский сет
-.wrap
-	.header__mobile-drop
-		.header__mobile-drop__button Заказать звонок
-		p Мы перезвоним вам в рабочее время с 09:00 до 17:30
-		h6 Напишите нам:
-		.header__mobile-drop__items
-			a(href="#") +375 (29) 316-01-01
-			a(href="#")
-				img(src="assets/images/icon-telegram.png")
-			a(href="#")
-				img(src="assets/images/icon-viber.png")
-		.header__mobile-drop__mail
-			a(href="#")
-				img(src="assets/images/icon-mail.png")
-				p info@rebox.by
+	.box
+		a.dropdown-header__link(href="#")
+			img.dropdown-header__icon(src="assets/images/icon-catering.png")
+			.dropdown-header__text Ужины на неделю
+		a.dropdown-header__link(href="#")
+			img.dropdown-header__icon(src="assets/images/icon-take-away.png")
+			.dropdown-header__text Пробный Rebox
+		a.dropdown-header__link(href="#")
+			img.dropdown-header__icon(src="assets/images/icon-carrot.png")
+			.dropdown-header__text Вегетарианский сет
+.box
+	.header__mobile-drop.mobile-drop
+		.mobile-drop__button Заказать звонок
+		.mobile-drop__text Мы перезвоним вам в рабочее время с 09:00 до 17:30
+		.mobile-drop__title Напишите нам:
+		.mobile-drop__items
+			a.mobile-drop__items__link(href="#") +375 (29) 316-01-01
+			a.mobile-drop__items__link(href="#")
+				img.mobile-drop__items__icon(src="assets/images/icon-telegram.png")
+			a.mobile-drop__items__link(href="#")
+				img.mobile-drop__items__icon(src="assets/images/icon-viber.png")
+		.mobile-drop__mail
+			a.mobile-drop__mail__link(href="#")
+				img.mobile-drop__mail__icon(src="assets/images/icon-mail.png")
+				.mobile-drop__mail__text info@rebox.by
+.box
+	.basket-drop
+		.basket-drop__title Корзина
+		.basket-drop__item
+			.basket-drop__subtitle Куриные крылья в маринаде
+			.basket-drop__text 30,50 руб.
+		.basket-drop__item
+			.basket-drop__subtitle Куриные крылья в маринаде
+			.basket-drop__text 30,50 руб.
+		.basket-drop__item.basket-drop-footer
+			.basket-drop-footer__item
+				.basket-drop-footer__item__title Доставка
+				.basket-drop-footer__text 5 руб.
+			.basket-drop-footer__item.basket-drop-footer__item-result
+				.basket-drop-footer__item__title Итого с доставкой
+				.basket-drop-footer__text 61 руб.
+			a(href="#").basket-drop-footer__btn Перейти к оплате

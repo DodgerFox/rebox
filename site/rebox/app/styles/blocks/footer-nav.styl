@@ -2,13 +2,14 @@
 	padding 32px 0
 	border-top 1px solid #e1e1e1
 	border-bottom 1px solid #e1e1e1
-	margin-top 50px
-	&__items
-		ul
-			display flex
-			justify-content space-between
-			a
-				color #000000
-				font-size 17px
-				font-weight 700
-				text-transform uppercase
+	&__list
+		display flex
+		justify-content space-between
+		&__link
+			color #000000
+			font-size 17px
+			font-weight 700
+			text-transform uppercase
+			t()
+			&:hover
+				color $secondary
