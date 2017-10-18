@@ -1,71 +1,71 @@
 .how-this-work
 	margin-bottom 55px
-	&__items
+	.stages
 		margin-top 44px
 		display flex
 		justify-content space-between
-	&__item
-		display flex
-		max-width 200px
-		align-items center
-		&__image
-			margin-right 20px
-		&__text
-			font-size 18px
-			font-weight 400
-			line-height 20px
-	&__container
-		z-index 3
-	&__slider
+		&__item
+			display flex
+			max-width 200px
+			align-items center
+			&-image
+				margin-right 20px
+			&-text
+				font-size 18px
+				font-weight 400
+				line-height 20px
+	.how-slider
 		margin-top 55px
 		width 100%
-	&__slide
-		height 297px
-		display flex
-		flex-direction column
-		background-size cover
-		justify-content center
-		align-items center
-		&__title
-			display inline-block
-			font-size 40px
-			font-weight 700
-		&__btn
-			margin-top 20px
-			color white
-			background-color $main
-			padding 19px 49px
-			font-size 20px
-			font-weight 400
-			border 3px solid transparent
-			cursor pointer
-			t()
-			&:hover
-				color $main
-				border 3px solid $main
-				background-color transparent
-	&__pagination
-		width 100%
-		height 297px
-		top 0
-		left 0
-		z-index 2
-		position absolute
-		display flex
-		align-items center
-		.box
+		&__container
+			z-index 3
+		&__slide
+			height 297px
 			display flex
-			justify-content space-between
-			padding-left 0
-		&__left
-			margin-left 28px
-			cursor pointer
-			&.swiper-button-disabled
-				opacity 0.2
-				cursor default
-		&__right
-			margin-right 28px
-			cursor pointer
-			&.swiper-button-disabled
-				opacity 0.2
-				cursor default
+			flex-direction column
+			background-size cover
+			justify-content center
+			align-items center
+			&-title
+				display inline-block
+				font-size 40px
+				font-weight 700
+			&-btn
+				margin-top 20px
+				color white
+				background-color $main
+				padding 19px 49px
+				font-size 20px
+				font-weight 400
+				border 3px solid transparent
+				cursor pointer
+				t()
+				&:hover
+					color $main
+					border 3px solid $main
+					background-color transparent
+		&__pagination
+			width 100%
+			height 297px
+			top 0
+			left 0
+			z-index 2
+			position absolute
+			display flex
+			align-items center
+			.box
+				display flex
+				justify-content space-between
+				padding-left 0
+			&__left
+				margin-left 28px
+				cursor pointer
+				&.swiper-button-disabled
+					opacity 0.2
+					cursor default
+			&__right
+				margin-right 28px
+				cursor pointer
+				&.swiper-button-disabled
+					opacity 0.2
+					cursor default

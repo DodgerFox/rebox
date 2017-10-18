@@ -1,32 +1,32 @@
 section.how-this-work
 	.box
-		.section__title Как это работает
-		.how-this-work__items
-			.how-this-work__item
-				img.how-this-work__item__image(src="assets/images/icon-chef.png")
-				.how-this-work__item__text Наш шеф разрабатывает меню
-			.how-this-work__item
-				img.how-this-work__item__image(src="assets/images/icon-menu.png")
-				.how-this-work__item__text Вы выбираете подходящий вариант
-			.how-this-work__item
-				img.how-this-work__item__image(src="assets/images/icon-vegetables.png")
-				.how-this-work__item__text Мы закупаем продукты, и привозим их к вашей двери
-			.how-this-work__item
-				img.how-this-work__item__image(src="assets/images/icon-pot.png")
-				.how-this-work__item__text Вы готовите вкусный ужин за 30-40 минут
+		.headering Как это работает
+		.how-this-work__stages.stages
+			.stages__item
+				img.stages__item-image(src="assets/images/icon-chef.png")
+				.stages__item-text Наш шеф разрабатывает меню
+			.stages__item
+				img.stages__item-image(src="assets/images/icon-menu.png")
+				.stages__item-text Вы выбираете подходящий вариант
+			.stages__item
+				img.stages__item-image(src="assets/images/icon-vegetables.png")
+				.stages__item-text Мы закупаем продукты, и привозим их к вашей двери
+			.stages__item
+				img.stages__item-image(src="assets/images/icon-pot.png")
+				.stages__item-text Вы готовите вкусный ужин за 30-40 минут
 
-		.how-this-work__slider.swiper-container
-			.how-this-work__container.swiper-wrapper
-				.how-this-work__slide.swiper-slide(style="background-image:url('assets/images/second-slider_image.png')")
-					.how-this-work__slide__title Пробный Rebox
-					a(href="#").how-this-work__slide__btn Хочу!
-				.how-this-work__slide.swiper-slide(style="background-image:url('assets/images/second-slider_image.png')")
-					.how-this-work__slide__title Пробный Rebox
-					a(href="#").how-this-work__slide__btn Хочу!
+		.how-this-work__slider.swiper-container.how-slider
+			.how-slider__container.swiper-wrapper
+				.how-slider__slide.swiper-slide(style="background-image:url('assets/images/second-slider_image.png')")
+					.how-slider__slide-title Пробный Rebox
+					a(href="#").how-slider__slide-btn Хочу!
+				.how-slider__slide.swiper-slide(style="background-image:url('assets/images/second-slider_image.png')")
+					.how-slider__slide-title Пробный Rebox
+					a(href="#").how-slider__slide-btn Хочу!
 
-			.how-this-work__pagination
+			.how-slider__pagination.pagination
 				.box
-					.how-this-work__pagination__left
-						img(src="assets/images/icon-left.png")
-					.how-this-work__pagination__right
-						img(src="assets/images/icon-right.png")
+					.pagination__left
+						img(src="assets/images/icon-left.png").pagination__left-image
+					.pagination__right
+						img(src="assets/images/icon-right.png").pagination__right-image
