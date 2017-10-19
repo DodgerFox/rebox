@@ -11,7 +11,7 @@ header.header
 						.navigation__link Меню
 					li.navigation__item
 						a.navigation__link(href="#") Как это работает
-					li.navigation__item
+					li.navigation__item.navigation__item--active
 						a.navigation__link(href="#") Доставка и оплата
 					li.navigation__item
 						a.navigation__link(href="#") Сертификаты
@@ -30,6 +30,7 @@ header.header
 			.basket
 				.basket__link
 					img.basket__icon(src="assets/images/basket.png")
+					img(src="assets/images/arrow-top.png").basket__arrow
 					.basket__circle 2
 
 	.dropdown-header
@@ -50,13 +51,13 @@ header.header
 				.dropdown-mobile__text Мы перезвоним вам в рабочее время с 09:00 до 17:30
 				.dropdown-mobile__title Напишите нам:
 				.dropdown-mobile__items
-					a.dropdown-mobile__items-link(href="#") +375 (29) 316-01-01
+					a.dropdown-mobile__items-link(href="tel:+375 (29) 316-01-01") +375 (29) 316-01-01
 					a.dropdown-mobile__items-link(href="#")
 						img.dropdown-mobile__items-icon(src="assets/images/icon-telegram.png")
 					a.dropdown-mobile__items-link(href="#")
 						img.dropdown-mobile__items-icon(src="assets/images/icon-viber.png")
 				.dropdown-mobile__mail
-					a.dropdown-mobile__mail-link(href="#")
+					a.dropdown-mobile__mail-link(href="mailto:info@rebox.by")
 						img.dropdown-mobile__mail-icon(src="assets/images/icon-mail.png")
 						.dropdown-mobile__mail-text info@rebox.by
 	.dropdown
@@ -66,9 +67,11 @@ header.header
 				.basket-drop__item
 					.basket-drop__subtitle Куриные крылья в маринаде
 					.basket-drop__text 30,50 руб.
+					img(src="assets/images/delete-item.svg").basket-drop__delete
 				.basket-drop__item
 					.basket-drop__subtitle Куриные крылья в маринаде
 					.basket-drop__text 30,50 руб.
+					img(src="assets/images/delete-item.svg").basket-drop__delete
 				.basket-drop__item.basket-drop-footer
 					.basket-drop-footer__item
 						.basket-drop-footer__title Доставка

@@ -5,6 +5,9 @@ var swiper = new Swiper('.welcome-slider', {
         slidesPerView: 1,
         nextButton: '.welcome-slider__pagination__right',
         prevButton: '.welcome-slider__pagination__left',
+        autoplay: {
+          delay: 5000,
+        }
     });
 
 
@@ -25,64 +28,86 @@ var swiper = new Swiper('.our-cooks__slider', {
     });
 
 
+function bigDropdownWrap() {
+    var buttonMenu = $('li.navigation__item-drop'),
+      dropdownMenu = $('.dropdown-header'),
+      arrowMenu = $('.navigation__item-arrow'),
+      indexMenu = false;
+    var buttonBasket = $('.basket__link'),
+      dropdownBasket = $('.basket-drop'),
+      arrowBasket = $('.basket__arrow'),
+      indexBasket = false;
+    var buttonMobile = $('.mobile'),
+      dropdownMobile = $('.dropdown-mobile'),
+      arrowMobile = $('.mobile__arrow'),
+      indexMobile = false;
 
-function menuDropdown() {
-  var button = $('li.navigation__item-drop'),
-      dropdown = $('.dropdown-header'),
-      arrow = $('.navigation__item-arrow'),
-      index = false;
-  $(button).click(function () {
-    if (index == false) {
-      $(dropdown).addClass('dropdown-header_droped')
-      $(button).addClass('navigation__item-drop--active')
-      $(arrow).addClass('navigation__item-arrow--active')
-      index = true
+function dropdownMobileClose() {
+      $(dropdownMobile).removeClass('dropdown-mobile_droped')
+      $(buttonMobile).removeClass('mobile--active')
+      $(arrowMobile).removeClass('mobile__arrow--active')
+      indexMobile = false 
+}
+
+function dropdownBasketClose() {
+      $(dropdownBasket).removeClass('basket-drop_droped')
+      $(arrowBasket).removeClass('basket__arrow--active')
+      indexBasket = false  
+}
+
+function dropdownMenuClose() {
+  $(dropdownMenu).removeClass('dropdown-header_droped')
+      $(buttonMenu).removeClass('navigation__item-drop--active')
+      $(arrowMenu).removeClass('navigation__item-arrow--active')
+      indexMenu = false  
+}
+
+
+  $(buttonMenu).click(function () {
+    if (indexMenu == false) {
+      $(dropdownMenu).addClass('dropdown-header_droped')
+      $(buttonMenu).addClass('navigation__item-drop--active')
+      $(arrowMenu).addClass('navigation__item-arrow--active')
+      indexMenu = true
+      dropdownBasketClose()
+      dropdownMobileClose()
     }else{
-      $(dropdown).removeClass('dropdown-header_droped')
-      $(button).removeClass('navigation__item-drop--active')
-      $(arrow).removeClass('navigation__item-arrow--active')
-      index = false      
+      dropdownMenuClose()
     }
   })
-}
-menuDropdown()
 
-function basketDropdown() {
-  var button = $('.basket__link'),
-      dropdown = $('.basket-drop'),
-      arrow = $('.header__navigation__item-arrow'),
-      index = false;
-  $(button).click(function () {
-    if (index == false) {
-      $(dropdown).addClass('basket-drop_droped')
-      $(arrow).addClass('header__navigation__item-arrow--active')
-      index = true
+
+
+  
+  $(buttonBasket).click(function () {
+    if (indexBasket == false) {
+      $(dropdownBasket).addClass('basket-drop_droped')
+      $(arrowBasket).addClass('basket__arrow--active')
+      indexBasket = true
+      dropdownMobileClose()
+      dropdownMenuClose()
     }else{
-      $(dropdown).removeClass('basket-drop_droped')
-      $(arrow).removeClass('header__navigation__item-arrow--active')
-      index = false      
+      dropdownBasketClose()
     }
   })
-}
-basketDropdown()
 
-function mobileDropdown() {
-  var button = $('.mobile'),
-      dropdown = $('.dropdown-mobile'),
-      arrow = $('.mobile__arrow'),
-      index = false;
-  $(button).click(function () {
-    if (index == false) {
-      $(dropdown).addClass('dropdown-mobile_droped')
-      $(button).addClass('mobile--active')
-      $(arrow).addClass('mobile__arrow--active')
-      index = true
+
+
+  
+  $(buttonMobile).click(function () {
+    if (indexMobile == false) {
+      $(dropdownMobile).addClass('dropdown-mobile_droped')
+      $(buttonMobile).addClass('mobile--active')
+      $(arrowMobile).addClass('mobile__arrow--active')
+      indexMobile = true
+      dropdownMenuClose()
+      dropdownBasketClose()
     }else{
-      $(dropdown).removeClass('dropdown-mobile_droped')
-      $(button).removeClass('mobile--active')
-      $(arrow).removeClass('mobile__arrow--active')
-      index = false      
+      dropdownMobileClose()     
     }
   })
+
+
 }
-mobileDropdown()
+
+bigDropdownWrap()

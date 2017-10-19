@@ -42,6 +42,9 @@
 			&:hover
 				&:after
 					width 100%
+			&--active
+				&:after
+					width 100%
 			&-drop
 				&:before
 					content ''
@@ -63,7 +66,7 @@
 				t()
 				&--active
 					opacity 1
-					bottom -34px
+					bottom -35px
 		&__link
 			color black
 	.mobile
@@ -100,11 +103,12 @@
 			t()
 			&--active
 				opacity 1
-				bottom -24px
+				bottom -25px
 	.basket
 		position relative
 		&__link
 			cursor pointer
+			margin-left -20px
 		&__circle
 			width 20px
 			height 20px
@@ -120,3 +124,12 @@
 			font-size 12px
 			padding-top 2px
 			font-weight 700
+		&__arrow
+			position absolute
+			left -10px
+			bottom -40px
+			opacity 0
+			t()
+			&--active
+				opacity 1
+				bottom -31px
