@@ -1,24 +1,34 @@
 section.why-yes
 	.box
 		.headering Почему ДА!
-		.why-yes__items
-			.why-yes__item
-				img.why-yes__item-image(src="assets/images/icon-stopwatch.png" width="62px" height="66px")
-				.why-yes__item-wrap
-					.why-yes__item-title Rebox экономит
-					.why-yes__item-text время и силы
-			.why-yes__item
-				img.why-yes__item-image(src="assets/images/icon-tea.png" width="56px" height="66px")
-				.why-yes__item-wrap
-					.why-yes__item-title Точная фасовка
-					.why-yes__item-text необходимого количества продуктов в вакуумные пакеты
-			.why-yes__item
-				img.why-yes__item-image(src="assets/images/icon-chef2.png" width="54px" height="66px")
-				.why-yes__item-wrap
-					.why-yes__item-title Фоторецепты проверены
-					.why-yes__item-text и тестируются шефом в три этапа
-			.why-yes__item
-				img.why-yes__item-image(src="assets/images/icon-stew.png" width="55px" height="65px")
-				.why-yes__item-wrap
-					.why-yes__item-title Большие порции
-					.why-yes__item-text все продукты взвешены и отмерены по рецептуре
+		.why-yes__container.swiper-container
+			.why-yes__items.swiper-wrapper
+				.why-yes__item.swiper-slide
+					img.why-yes__item-image(src="assets/images/icon-stopwatch.png" width="62px" height="66px")
+					.why-yes__item-wrap
+						.why-yes__item-title Rebox экономит
+						.why-yes__item-text время и силы
+				.why-yes__item.swiper-slide
+					img.why-yes__item-image(src="assets/images/icon-tea.png" width="56px" height="66px")
+					.why-yes__item-wrap
+						.why-yes__item-title Точная фасовка
+						.why-yes__item-text необходимого количества продуктов в вакуумные пакеты
+				.why-yes__item.swiper-slide
+					img.why-yes__item-image(src="assets/images/icon-chef2.png" width="54px" height="66px")
+					.why-yes__item-wrap
+						.why-yes__item-title Фоторецепты проверены
+						.why-yes__item-text и тестируются шефом в три этапа
+				.why-yes__item.swiper-slide
+					img.why-yes__item-image(src="assets/images/icon-stew.png" width="55px" height="65px")
+					.why-yes__item-wrap
+						.why-yes__item-title Большие порции
+						.why-yes__item-text все продукты взвешены и отмерены по рецептуре
+
+			.why-yes__pagination.pagination-basic
+				.box
+					.pagination-basic__left
+						img(src="assets/images/icon-left.png").pagination__left-image
+					.pagination-basic__right
+						img(src="assets/images/icon-right.png").pagination__right-image
+
+			.why-yes__pagination.dots-basic

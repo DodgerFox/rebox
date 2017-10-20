@@ -6,7 +6,10 @@
 	top -20px
 	z-index 18
 	left 0
+	box-shadow 0px -18px 50px
 	t()
+	+to-width(600px)
+		display none
 	&.dropdown-header_droped
 		transform translateY(103px)
 	.box
@@ -18,6 +21,8 @@
 		margin-right 48px
 		display flex
 		align-items center
+		+to-width(600px)
+			margin-right 0
 		&:last-child
 			margin-right 0
 		&:hover

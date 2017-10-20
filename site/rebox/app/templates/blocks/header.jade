@@ -17,21 +17,27 @@ header.header
 						a.navigation__link(href="#") Сертификаты
 					li.navigation__item
 						a.navigation__link(href="#") О сервисе
-
-			.mobile
-				img.mobile__icon(src="assets/images/phone.png")
-				img(src="assets/images/arrow-top.png").mobile__arrow
-				.mobile__wrap
-					.mobile__title 316-01-01
-					.mobile__text мтс, velcom
-			.account
-				a.account__link(href="#")
-					img.account__icon(src="assets/images/user.png")
-			.basket
-				.basket__link
-					img.basket__icon(src="assets/images/basket.png")
-					img(src="assets/images/arrow-top.png").basket__arrow
-					.basket__circle 2
+				//- .navigation__account
+				//- 	img(src="assets/images/user-mobile.png").navigation__account-image
+				//- 	.navigation__account-text Личный кабинет
+			.header__items
+				.mobile
+					img.mobile__icon(src="assets/images/phone.png")
+					img(src="assets/images/arrow-top.png").mobile__arrow
+					.mobile__wrap
+						.mobile__title 316-01-01
+						.mobile__text мтс, velcom
+				.account
+					a.account__link(href="#")
+						img.account__icon(src="assets/images/user.png")
+				.basket
+					.basket__link
+						img.basket__icon(src="assets/images/basket.png")
+						img(src="assets/images/arrow-top.png").basket__arrow
+						.basket__circle 2
+				.gamburger
+					img.gamburger__icon(src="assets/images/svg/icon-gamburger.svg")
+					img.gamburger__icon-close(src="assets/images/menu-iconclose.png")
 
 	.dropdown-header
 		.box
@@ -67,11 +73,11 @@ header.header
 				.basket-drop__item
 					.basket-drop__subtitle Куриные крылья в маринаде
 					.basket-drop__text 30,50 руб.
-					img(src="assets/images/delete-item.svg").basket-drop__delete
+					img(src="assets/images/svg/delete-item.svg").basket-drop__delete
 				.basket-drop__item
 					.basket-drop__subtitle Куриные крылья в маринаде
 					.basket-drop__text 30,50 руб.
-					img(src="assets/images/delete-item.svg").basket-drop__delete
+					img(src="assets/images/svg/delete-item.svg").basket-drop__delete
 				.basket-drop__item.basket-drop-footer
 					.basket-drop-footer__item
 						.basket-drop-footer__title Доставка

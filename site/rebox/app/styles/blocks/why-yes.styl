@@ -5,17 +5,35 @@
 		display flex
 		justify-content space-between
 		align-items flex-start
-		margin-top 44px
+		padding-top 44px
 	&__item
-		max-width 242px
+		width 25%
 		display flex
+		padding-right 40px
+		+to-width(1024px)
+			flex-direction column
+			align-items center
+			padding-right 20px
+		+to-width(840px)
+			width 100%
+		&:last-child
+			padding-right 0
 		&-image
 			margin-right 16px
 		&-title
 			font-size 23px
 			font-weight 700
 			line-height 20px
+			+to-width(1024px)
+				padding-top 15px
+				text-align center
 		&-text
 			margin-top 6px
 			font-size 16px
 			line-height 20px
+			+to-width(1024px)
+				text-align center
+	&__pagination
+		display none
+		+to-width(840px)
+			display flex

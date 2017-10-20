@@ -15,19 +15,6 @@
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 		<!-- Favicon-->
-		<link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicons/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="../assets/images/favicons/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="../assets/images/favicons/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="../assets/images/favicons/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="../assets/images/favicons/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="../assets/images/favicons/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="../assets/images/favicons/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="../assets/images/favicons/apple-icon-152x152.png">
-		<link rel="icon" type="image/png" href="../assets/images/favicons/favicon-196x196.png" sizes="196x196">
-		<link rel="icon" type="image/png" href="../assets/images/favicons/favicon-96x96.png" sizes="96x96">
-		<link rel="icon" type="image/png" href="../assets/images/favicons/favicon-32x32.png" sizes="32x32">
-		<link rel="icon" type="image/png" href="../assets/images/favicons/favicon-16x16.png" sizes="16x16">
-		<link rel="icon" type="image/png" href="assets/images/favicons/logort.ico" sizes="64x64">
 		<meta name="application-name" content=" ">
 		<meta name="msapplication-TileColor" content="#FFFFFF">
 		<meta name="msapplication-TileImage" content="mstile-144x144.png">
@@ -39,7 +26,7 @@
 		<meta name="description" content="">
 		<meta name="copyright" content="">
 		<!-- Common CSS-->
-		<link href="assets/styles/common.css?1508423672016" rel="stylesheet">
+		<link href="assets/styles/common.css?1508481571310" rel="stylesheet">
 	</head>
 
 	<body>
@@ -69,24 +56,30 @@
 								</li>
 							</ul>
 						</nav>
-						<div class="mobile">
-							<img src="assets/images/phone.png" class="mobile__icon">
-							<img src="assets/images/arrow-top.png" class="mobile__arrow">
-							<div class="mobile__wrap">
-								<div class="mobile__title">316-01-01</div>
-								<div class="mobile__text">мтс, velcom</div>
+						<div class="header__items">
+							<div class="mobile">
+								<img src="assets/images/phone.png" class="mobile__icon">
+								<img src="assets/images/arrow-top.png" class="mobile__arrow">
+								<div class="mobile__wrap">
+									<div class="mobile__title">316-01-01</div>
+									<div class="mobile__text">мтс, velcom</div>
+								</div>
 							</div>
-						</div>
-						<div class="account">
-							<a href="#" class="account__link">
-								<img src="assets/images/user.png" class="account__icon">
-							</a>
-						</div>
-						<div class="basket">
-							<div class="basket__link">
-								<img src="assets/images/basket.png" class="basket__icon">
-								<img src="assets/images/arrow-top.png" class="basket__arrow">
-								<div class="basket__circle">2</div>
+							<div class="account">
+								<a href="#" class="account__link">
+									<img src="assets/images/user.png" class="account__icon">
+								</a>
+							</div>
+							<div class="basket">
+								<div class="basket__link">
+									<img src="assets/images/basket.png" class="basket__icon">
+									<img src="assets/images/arrow-top.png" class="basket__arrow">
+									<div class="basket__circle">2</div>
+								</div>
+							</div>
+							<div class="gamburger">
+								<img src="assets/images/svg/icon-gamburger.svg" class="gamburger__icon">
+								<img src="assets/images/menu-iconclose.png" class="gamburger__icon-close">
 							</div>
 						</div>
 					</div>
@@ -137,12 +130,12 @@
 							<div class="basket-drop__item">
 								<div class="basket-drop__subtitle">Куриные крылья в маринаде</div>
 								<div class="basket-drop__text">30,50 руб.</div>
-								<img src="assets/images/delete-item.svg" class="basket-drop__delete">
+								<img src="assets/images/svg/delete-item.svg" class="basket-drop__delete">
 							</div>
 							<div class="basket-drop__item">
 								<div class="basket-drop__subtitle">Куриные крылья в маринаде</div>
 								<div class="basket-drop__text">30,50 руб.</div>
-								<img src="assets/images/delete-item.svg" class="basket-drop__delete">
+								<img src="assets/images/svg/delete-item.svg" class="basket-drop__delete">
 							</div>
 							<div class="basket-drop__item basket-drop-footer">
 								<div class="basket-drop-footer__item">
@@ -169,7 +162,7 @@
 								</div>
 							</div>
 						</div>
-						<div style="background-image:url('assets/images/front-image.png');" class="welcome-slider__slide swiper-slide">
+						<div style="background-image:url('assets/images/front-image2.jpg');" class="welcome-slider__slide swiper-slide">
 							<div class="box">
 								<div class="welcome-slider__content">
 									<div class="welcome-slider__slide-title">Наборы продуктов</div>
@@ -184,10 +177,11 @@
 								<img src="assets/images/icon-left.png" class="pagination__left-arrow">
 							</div>
 							<div class="pagination__right">
-								<img src="assets/images/icon-right.png" class="pagination__left-arrow">
+								<img src="assets/images/icon-right.png" class="pagination__right-arrow">
 							</div>
 						</div>
 					</div>
+					<div class="welcome-slider__dots"></div>
 				</section>
 				<section class="how-this-work">
 					<div class="box">
@@ -216,11 +210,11 @@
 									<div class="how-slider__slide-title">Пробный Rebox</div><a href="#" class="how-slider__slide-btn">Хочу!</a>
 								</div>
 								<div style="background-image:url('assets/images/second-slider_image.png')" class="how-slider__slide swiper-slide">
-									<div class="how-slider__slide-title">Пробный Rebox</div><a href="#" class="how-slider__slide-btn">Хочу!</a>
+									<div class="how-slider__slide-title">Пробный Rebox</div><a href="#" class="how-slider__slide-btn">Хочу</a>
 								</div>
 							</div>
-							<div class="how-slider__pagination pagination">
-								<div class="box">
+							<div class="how-this-work__pagination pagination">
+								<div class="box pagination__box">
 									<div class="pagination__left">
 										<img src="assets/images/icon-left.png" class="pagination__left-image">
 									</div>
@@ -229,6 +223,7 @@
 									</div>
 								</div>
 							</div>
+							<div class="how-this-work__dots"></div>
 						</div>
 					</div>
 				</section>
@@ -249,122 +244,260 @@
 				<section class="why-yes">
 					<div class="box">
 						<div class="headering">Почему ДА!</div>
-						<div class="why-yes__items">
-							<div class="why-yes__item">
-								<img src="assets/images/icon-stopwatch.png" width="62px" height="66px" class="why-yes__item-image">
-								<div class="why-yes__item-wrap">
-									<div class="why-yes__item-title">Rebox экономит</div>
-									<div class="why-yes__item-text">время и силы</div>
+						<div class="why-yes__container swiper-container">
+							<div class="why-yes__items swiper-wrapper">
+								<div class="why-yes__item swiper-slide">
+									<img src="assets/images/icon-stopwatch.png" width="62px" height="66px" class="why-yes__item-image">
+									<div class="why-yes__item-wrap">
+										<div class="why-yes__item-title">Rebox экономит</div>
+										<div class="why-yes__item-text">время и силы</div>
+									</div>
+								</div>
+								<div class="why-yes__item swiper-slide">
+									<img src="assets/images/icon-tea.png" width="56px" height="66px" class="why-yes__item-image">
+									<div class="why-yes__item-wrap">
+										<div class="why-yes__item-title">Точная фасовка</div>
+										<div class="why-yes__item-text">необходимого количества продуктов в вакуумные пакеты</div>
+									</div>
+								</div>
+								<div class="why-yes__item swiper-slide">
+									<img src="assets/images/icon-chef2.png" width="54px" height="66px" class="why-yes__item-image">
+									<div class="why-yes__item-wrap">
+										<div class="why-yes__item-title">Фоторецепты проверены</div>
+										<div class="why-yes__item-text">и тестируются шефом в три этапа</div>
+									</div>
+								</div>
+								<div class="why-yes__item swiper-slide">
+									<img src="assets/images/icon-stew.png" width="55px" height="65px" class="why-yes__item-image">
+									<div class="why-yes__item-wrap">
+										<div class="why-yes__item-title">Большие порции</div>
+										<div class="why-yes__item-text">все продукты взвешены и отмерены по рецептуре</div>
+									</div>
 								</div>
 							</div>
-							<div class="why-yes__item">
-								<img src="assets/images/icon-tea.png" width="56px" height="66px" class="why-yes__item-image">
-								<div class="why-yes__item-wrap">
-									<div class="why-yes__item-title">Точная фасовка</div>
-									<div class="why-yes__item-text">необходимого количества продуктов в вакуумные пакеты</div>
+							<div class="why-yes__pagination pagination-basic">
+								<div class="box">
+									<div class="pagination-basic__left">
+										<img src="assets/images/icon-left.png" class="pagination__left-image">
+									</div>
+									<div class="pagination-basic__right">
+										<img src="assets/images/icon-right.png" class="pagination__right-image">
+									</div>
 								</div>
 							</div>
-							<div class="why-yes__item">
-								<img src="assets/images/icon-chef2.png" width="54px" height="66px" class="why-yes__item-image">
-								<div class="why-yes__item-wrap">
-									<div class="why-yes__item-title">Фоторецепты проверены</div>
-									<div class="why-yes__item-text">и тестируются шефом в три этапа</div>
-								</div>
-							</div>
-							<div class="why-yes__item">
-								<img src="assets/images/icon-stew.png" width="55px" height="65px" class="why-yes__item-image">
-								<div class="why-yes__item-wrap">
-									<div class="why-yes__item-title">Большие порции</div>
-									<div class="why-yes__item-text">все продукты взвешены и отмерены по рецептуре</div>
-								</div>
-							</div>
+							<div class="why-yes__pagination dots-basic"></div>
 						</div>
 					</div>
 				</section>
 				<section class="our-cooks">
-					<div class="box">
-						<div class="headering">Наши шеф-повара</div>
-						<div class="box-mini">
-							<div class="our-cooks__slider swiper-container">
-								<div class="swiper-wrapper">
-									<div class="our-cooks__slide swiper-slide">
-										<div style="background-image: url('assets/images/chef-image.png')" class="our-cooks__slide-image"></div>
-										<div class="our-cooks__slide-content">
-											<div class="our-cooks__slide-title">Евгений Макаревич</div>
-											<div class="our-cooks__slide-text gray-text">бренд-шеф rebox.by</div>
-											<div class="our-cooks__slide-text">Каждый раз, когда я прорабатываю новый рецепт для rebox, представляю, что готовлю для своей семьи. А кормить родных – это ни с чем несравнимое удовольствие. Я хочу, чтобы ваша домашняя кухня стала местом, где готовят с настроением, а блюда
-												из нашего меню каждый день собирали вашу семью за одним столом. И наша коробка ужинов уже воплощает мои мечты в жизнь!</div>
-										</div>
+					<div class="headering">Наши шеф-повара</div>
+					<div class="our-cooks__slider swiper-container">
+						<div class="swiper-wrapper">
+							<div class="our-cooks__slide swiper-slide">
+								<div class="box-mini">
+									<div style="background-image: url('assets/images/chef-image.png')" class="our-cooks__slide-image"></div>
+									<div class="our-cooks__slide-content">
+										<div class="our-cooks__slide-title">Евгений Макаревич</div>
+										<div class="our-cooks__slide-text gray-text">бренд-шеф rebox.by</div>
+										<div class="our-cooks__slide-text">Каждый раз, когда я прорабатываю новый рецепт для rebox, представляю, что готовлю для своей семьи. А кормить родных – это ни с чем несравнимое удовольствие. Я хочу, чтобы ваша домашняя кухня стала местом, где готовят с настроением, а блюда из
+											нашего меню каждый день собирали вашу семью за одним столом. И наша коробка ужинов уже воплощает мои мечты в жизнь!</div>
 									</div>
-									<div class="our-cooks__slide swiper-slide">
-										<div style="background-image: url('assets/images/chef-image.png')" class="our-cooks__slide-image"></div>
-										<div class="our-cooks__slide-content">
-											<div class="our-cooks__slide-title">Евгений Макаревич</div>
-											<div class="our-cooks__slide-text gray-text">бренд-шеф rebox.by</div>
-											<div class="our-cooks__slide-text">Каждый раз, когда я прорабатываю новый рецепт для rebox, представляю, что готовлю для своей семьи. А кормить родных – это ни с чем несравнимое удовольствие. Я хочу, чтобы ваша домашняя кухня стала местом, где готовят с настроением, а блюда
-												из нашего меню каждый день собирали вашу семью за одним столом. И наша коробка ужинов уже воплощает мои мечты в жизнь!</div>
-										</div>
+								</div>
+							</div>
+							<div class="our-cooks__slide swiper-slide">
+								<div class="box-mini">
+									<div style="background-image: url('assets/images/chef-image.png')" class="our-cooks__slide-image"></div>
+									<div class="our-cooks__slide-content">
+										<div class="our-cooks__slide-title">Евгений Макаревич</div>
+										<div class="our-cooks__slide-text gray-text">бренд-шеф rebox.by</div>
+										<div class="our-cooks__slide-text">Каждый раз, когда я прорабатываю новый рецепт для rebox, представляю, что готовлю для своей семьи. А кормить родных – это ни с чем несравнимое удовольствие. Я хочу, чтобы ваша домашняя кухня стала местом, где готовят с настроением, а блюда из
+											нашего меню каждый день собирали вашу семью за одним столом. И наша коробка ужинов уже воплощает мои мечты в жизнь!</div>
 									</div>
 								</div>
 							</div>
 						</div>
+						<div class="our-cooks__pagination pagination">
+							<div class="box">
+								<div class="pagination__left">
+									<img src="assets/images/icon-left.png" class="pagination__left-image">
+								</div>
+								<div class="pagination__right">
+									<img src="assets/images/icon-right.png" class="pagination__right-image">
+								</div>
+							</div>
+						</div>
 					</div>
+					<div class="our-cooks__dots"></div>
 				</section>
 				<section class="feedbacks">
 					<div class="box">
-						<div class="headering">Отзывы о <a href="#" class="headering-link"> #rebox</a>
+						<div class="headering">Отзывы о <span> #rebox</span>
 						</div>
-						<div class="feedbacks__items">
-							<div class="feedbacks__item"></div>
+						<div class="feedbacks__container swiper-container">
+							<div class="feedbacks__items swiper-wrapper">
+								<div class="feedbacks__post post swiper-slide">
+									<div class="post__wrap">
+										<div class="post__header">
+											<div class="post__user">
+												<div style="background-image: url('assets/images/image-avatar.jpg')" class="post__user-avatar"></div>
+												<div class="post__user-wrap">
+													<div class="post__user-title">rexoboy</div>
+													<div class="post__user-text">Minsk, Belarus</div>
+												</div>
+											</div><a href="#" class="post__button">Подписаться</a>
+										</div>
+										<div style="background-image: url('assets/images/insta-image.jpg')" class="post__image"></div>
+										<div class="post__content post-content">
+											<div class="post-content__item">
+												<p>rexoboy<span>На это можно смотреть вечно! </br></span><a href="#">@adawdwad </br></a><a href="#">#belarus</a>
+												</p>
+											</div>
+											<div class="post-content__item">
+												<p>rexoboy<span>На это можно смотреть вечно! </br></span><a href="#">@adawdwad </br></a><a href="#">#belarus</a>
+												</p>
+											</div>
+											<div class="post-content__item">
+												<p>clockwork<span>На это можно смотреть вечно! </br></span><a href="#">@adawdwad </br></a><a href="#">#belarus</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="feedbacks__post post swiper-slide">
+									<div class="post__wrap">
+										<div class="post__header">
+											<div class="post__user">
+												<div style="background-image: url('assets/images/image-avatar.jpg')" class="post__user-avatar"></div>
+												<div class="post__user-wrap">
+													<div class="post__user-title">rexoboy</div>
+													<div class="post__user-text">Minsk, Belarus</div>
+												</div>
+											</div><a href="#" class="post__button">Подписаться</a>
+										</div>
+										<div style="background-image: url('assets/images/insta-image.jpg')" class="post__image"></div>
+										<div class="post__content post-content">
+											<div class="post-content__item">
+												<p>rexoboy<span>На это можно смотреть вечно! </br></span><a href="#">@adawdwad </br></a><a href="#">#belarus</a>
+												</p>
+											</div>
+											<div class="post-content__item">
+												<p>rexoboy<span>На это можно смотреть вечно! </br></span><a href="#">@adawdwad </br></a><a href="#">#belarus</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="feedbacks__post post swiper-slide">
+									<div class="post__wrap">
+										<div class="post__header">
+											<div class="post__user">
+												<div style="background-image: url('assets/images/image-avatar.jpg')" class="post__user-avatar"></div>
+												<div class="post__user-wrap">
+													<div class="post__user-title">rexoboy</div>
+													<div class="post__user-text">Minsk, Belarus</div>
+												</div>
+											</div><a href="#" class="post__button">Подписаться</a>
+										</div>
+										<div style="background-image: url('assets/images/insta-image.jpg')" class="post__image"></div>
+										<div class="post__content post-content">
+											<div class="post-content__item">
+												<p>rexoboy<span>На это можно смотреть вечно! </br></span><a href="#">@adawdwad </br></a><a href="#">#belarus</a>
+												</p>
+											</div>
+											<div class="post-content__item">
+												<p>rexoboy<span>На это можно смотреть вечно! </br></span><a href="#">@adawdwad </br></a><a href="#">#belarus</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="feedbacks__post post swiper-slide">
+									<div class="post__wrap">
+										<div class="post__header">
+											<div class="post__user">
+												<div style="background-image: url('assets/images/image-avatar.jpg')" class="post__user-avatar"></div>
+												<div class="post__user-wrap">
+													<div class="post__user-title">rexoboy</div>
+													<div class="post__user-text">Minsk, Belarus</div>
+												</div>
+											</div><a href="#" class="post__button">Подписаться</a>
+										</div>
+										<div style="background-image: url('assets/images/insta-image.jpg')" class="post__image"></div>
+										<div class="post__content post-content">
+											<div class="post-content__item">
+												<p>rexoboy<span>На это можно смотреть вечно! </br></span><a href="#">@adawdwad </br></a><a href="#">#belarus</a>
+												</p>
+											</div>
+											<div class="post-content__item">
+												<p>rexoboy<span>На это можно смотреть вечно! </br></span><a href="#">@adawdwad </br></a><a href="#">#belarus</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="feedbacks__pagination pagination-basic">
+								<div class="box">
+									<div class="pagination-basic__left">
+										<img src="assets/images/icon-left.png" class="pagination__left-image">
+									</div>
+									<div class="pagination-basic__right">
+										<img src="assets/images/icon-right.png" class="pagination__right-image">
+									</div>
+								</div>
+							</div>
 						</div>
+						<div class="feedbacks__dots dots-basic"></div>
 					</div>
 				</section>
 			</div>
 			<footer class="footer">
-				<section class="footer-nav">
-					<div class="box">
-						<nav class="footer-nav__navigation">
-							<ul class="footer-nav__list">
-								<li class="footer-nav__list__item"><a href="#" class="footer-nav__list__link">Как это работает</a>
-								</li>
-								<li class="footer-nav__list__item"><a href="#" class="footer-nav__list__link">Доставка и оплата</a>
-								</li>
-								<li class="footer-nav__list__item"><a href="#" class="footer-nav__list__link">О сервисе</a>
-								</li>
-								<li class="footer-nav__list__item"><a href="#" class="footer-nav__list__link">Рецепты</a>
-								</li>
-								<li class="footer-nav__list__item"><a href="#" class="footer-nav__list__link">Чаво</a>
-								</li>
-								<li class="footer-nav__list__item"><a href="#" class="footer-nav__list__link">Пользовательское соглашение</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-				</section>
-				<div class="footer-info">
-					<div class="box">
-						<div class="footer-info__left">
-							<div class="footer-info__left__title">Реквизиты</div>
-							<div class="footer-info__left__text">2016-2017 © Rebox.by - интернет магазин продуктов.</br>ООО РЕСТОРАЦИЯ, УНП 190756996</br>РБ, 223053, Минская обл., Минский р-н, Боровлянский с/с, 81-1б, каб.11 район д. Дроздово</br>Свидетельство о регистрации №1919 от 22.09.2016</br>выдано Минским
-								городским исполнительным комитетом, РБ.</br>Время работы: 10:00 – 17:30 пн–пт.</br>Внесен в торговый реестр 18.01.2017 №365141, Мингорисполком РБ</div>
+				<div class="footer__main">
+					<section class="footer-nav">
+						<div class="box">
+							<nav class="footer-nav__navigation">
+								<ul class="footer-nav__list">
+									<li class="footer-nav__list-item"><a href="#" class="footer-nav__list-link">Меню</a>
+									</li>
+									<li class="footer-nav__list-item"><a href="#" class="footer-nav__list-link">Как это работает</a>
+									</li>
+									<li class="footer-nav__list-item"><a href="#" class="footer-nav__list-link footer-nav__list-link--active">Доставка и оплата</a>
+									</li>
+									<li class="footer-nav__list-item"><a href="#" class="footer-nav__list-link">О сервисе</a>
+									</li>
+									<li class="footer-nav__list-item"><a href="#" class="footer-nav__list-link">Рецепты</a>
+									</li>
+									<li class="footer-nav__list-item"><a href="#" class="footer-nav__list-link">Чаво</a>
+									</li>
+									<li class="footer-nav__list-item"><a href="#" class="footer-nav__list-link">Пользовательское соглашение</a>
+									</li>
+								</ul>
+							</nav>
 						</div>
-						<div class="footer-info__right">
-							<div class="footer-info__right-social">
-								<div class="footer-info__right__title">Мы в соцсетях:</div>
-								<div class="footer-info__right-social__icons">
-									<div class="footer-info__right-social__item">
-										<img src="assets/images/icon-insta.png">
-									</div>
-									<div class="footer-info__right-social__item">
-										<img src="assets/images/icon-fb.png">
-									</div>
-									<div class="footer-info__right-social__item">
-										<img src="assets/images/icon-vk.png">
+					</section>
+					<div class="footer-info">
+						<div class="box">
+							<div class="footer-info__left">
+								<div class="footer-info__left-title">Реквизиты</div>
+								<div class="footer-info__left-text">2016-2017 © Rebox.by - интернет магазин продуктов.</br>ООО РЕСТОРАЦИЯ, УНП 190756996</br>РБ, 223053, Минская обл., Минский р-н, Боровлянский с/с, 81-1б, каб.11 район д. Дроздово</br>Свидетельство о регистрации №1919 от 22.09.2016</br>выдано Минским
+									городским исполнительным комитетом, РБ.</br>Время работы: 10:00 – 17:30 пн–пт.</br>Внесен в торговый реестр 18.01.2017 №365141, Мингорисполком РБ</div>
+							</div>
+							<div class="footer-info__right">
+								<div class="footer-info__right-wrap">
+									<div class="footer-info__right-title">Мы в соцсетях:</div>
+									<div class="footer-info__right-social">
+										<a href="https://www.instagram.com/reboxby/" style="background-image:url('assets/images/icon-insta.png');" class="footer-info__right-icon"></a>
+										<a href="https://www.facebook.com/reboxby/" style="background-image:url('assets/images/icon-fb.png');" class="footer-info__right-icon"></a>
+										<a href="https://vk.com/reboxby" style="background-image:url('assets/images/icon-vk.png');" class="footer-info__right-icon"></a>
 									</div>
 								</div>
+								<div class="footer-info__right-title">Подпишись!</div>
+								<div class="footer-info__right-text">на нашу рассылку, чтобы не пропустить самые выгодные предложения</div>
+								<form class="footer-info__form">
+									<input type="text" placeholder="Email" class="footer-info__form-input">
+									<input type="submit" class="footer-info__form-btn">
+								</form>
 							</div>
-							<div class="footer-info__right__title">Подпишись!</div>
-							<div class="footer-info__right__text">на нашу рассылку, чтобы не пропустить самые выгодные предложения</div>
 						</div>
 					</div>
 				</div>

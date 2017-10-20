@@ -2,6 +2,12 @@
     <symbol id="icon_close" viewBox="0 0 12 12">
       <title>469AB5E3-200E-4B06-B79D-5C46D43407DD</title><path d="M.43 11.576c.294.295.663.424 1.05.424.39 0 .758-.148 1.053-.424l3.47-3.488 3.47 3.47c.294.294.663.424 1.05.424.388 0 .757-.148 1.053-.425.572-.572.572-1.513 0-2.085l-3.488-3.47 3.47-3.47c.57-.57.57-1.512 0-2.084-.573-.573-1.514-.573-2.086 0l-3.47 3.47-3.47-3.49C1.963-.14 1.02-.14.45.43c-.573.573-.573 1.514 0 2.086l3.47 3.488-3.49 3.47c-.57.59-.57 1.513 0 2.104z" fill-rule="nonzero" fill="#000"/>
     </symbol>
+    <symbol id="icon_delete-item" viewBox="0 0 19 19">
+      <defs><path id="a" d="M1494 153.99l1 1-6.5 6.5 6.5 6.52-1 1-6.5-6.51-6.5 6.5-1-1 6.5-6.5-6.5-6.5 1-1.01 6.5 6.5z"/></defs><use fill="#e9e9e9" xlink:href="#a" transform="translate(-1478 -152)"/>
+    </symbol>
+    <symbol id="icon_icon-gamburger" viewBox="0 0 22 15">
+      <defs><path id="a" d="M281 28h19v2h-19zm0-5h19v2h-19zm0 10h19v2h-19z"/></defs><use fill="#909090" xlink:href="#a" transform="translate(-279 -21)"/>
+    </symbol>
     <symbol id="icon_line" viewBox="0 0 159 85">
       <title>2C413819-3E42-4EF3-9C77-4F042CC75AD5</title><defs><filter x="-7.8%" y="-200%" width="115.6%" height="500%" filterUnits="objectBoundingBox" id="a"><feGaussianBlur stdDeviation="4" in="SourceGraphic"/></filter></defs><rect filter="url(#a)" transform="rotate(24 819.752 -1322.093)" x="621.779" y="222.49" width="154" height="6" rx="3" fill="#313131" fill-rule="evenodd"/>
     </symbol>

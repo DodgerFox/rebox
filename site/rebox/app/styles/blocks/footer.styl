@@ -1,47 +1,106 @@
 .footer-info
-	margin-top 38px
+	padding-top 38px
+	+to-width(900px)
+		border-top 1px solid #e1e1e1
 	.box
 		display flex
 		justify-content space-between
 		padding-bottom 35px
 		border-bottom 1px solid #e1e1e1
+		+to-width(840px)
+			justify-content center
 	&__left
-		&__title
+		+to-width(840px)
+			display none
+		&-title
 			font-size 17px
 			font-weight 700
 			text-transform uppercase
-		&__text
+		&-text
 			margin-top 25px
 			font-size 16px
 			font-weight 400
 			line-height 25px
 	&__right
 		max-width 360px
-		&__title
+		min-width 350px
+		+to-width(840px)
+			max-width 100%
+		+to-width(500px)
+			min-width 200px
+		&-title
 			font-size 17px
 			font-weight 700
 			text-transform uppercase
-		&__text
-			margin-top 23px
+			padding-bottom 23px
+			+to-width(500px)
+				text-align center
+				padding-bottom 14px
+		&-text
 			font-size 16px
 			font-weight 400
 			line-height 20px
-		&-social
+			+to-width(500px)
+				text-align center
+		&-wrap
 			width 100%
 			display flex
 			justify-content space-between
 			align-items center
 			padding-bottom 30px
-			&__icons
-				display flex
-			&__item
-				background-color $secondary
-				border-radius 50%
-				height 53px
-				width 53px
-				display flex
-				align-items center
-				justify-content center
-				margin-right 6px
-				&:last-child
-					margin-right 0
+			+to-width(500px)
+				flex-direction column
+				padding-bottom 32px
+		&-social
+			display flex
+		&-icon
+			background-color $secondary
+			border-radius 50%
+			height 53px
+			width 53px
+			display flex
+			align-items center
+			justify-content center
+			margin-right 6px
+			background-position center
+			background-repeat no-repeat
+			t()
+			&:last-child
+				margin-right 0
+			&:hover
+				transform scale(0.95)
+			+to-width(500px)
+				margin-right 16px
+	&__form
+		display flex
+		padding-top 16px
+		width 100%
+		+to-width(500px)
+			flex-direction column
+			align-items center
+		&-input
+			border 1px solid #cfcfcf
+			height 54px
+			box-shadow none
+			width 55%
+			padding 20px
+			font-size 18px
+			color #848484
+			t()
+			&:focus
+				border 1px solid #b99359
+			+to-width(500px)
+				margin-bottom 10px
+				width 100%
+		&-btn
+			width 45%
+			height 54px
+			background-color #cfcfcf
+			box-shadow none
+			border 2px solid #cfcfcf
+			font-size 18px
+			color white
+			font-weight 400
+			t()
+			+to-width(500px)
+				width 80%

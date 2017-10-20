@@ -4,30 +4,84 @@
 	z-index 20
 	width 100%
 	height 84px
+	+to-width(1024px)
+		position fixed
+	+to-width(600px)
+		height 60px
 	&__wrap
 		padding 14px 0
 		border-bottom 1px solid #dbdce1
 		background white
 		z-index 20
 		position relative
+		+to-width(600px)
+			padding 0
+			height 60px
 		.box
 			display flex
 			justify-content space-between
 			align-items center
 			height 100%
+			+to-width(600px)
+				padding 0 15px
 	.logo
 		&__link
 			display block
+		&__image
+			+to-width(600px)
+				width 90px
+				height 41px
 	.navigation
+		+to-width(1024px)
+			display flex
+			flex-direction column
+			justify-content space-between
+			position absolute
+			z-index 10
+			height 100vh
+			top 60px
+			right 0px
+			width 266px
+			background white
+			padding-top 60px
+			padding-left 36px
+			transform translateX(270px)
+			t()
+			&--active
+				transform translateX(0)
+		&__account
+			width 266px
+			height 60px
+			bottom 0px
+			right 0
+			position fixed
+			background-color #e8e8e8
+			display flex
+			justify-content center
+			align-items center
+			cursor pointer
+			&-text
+				font-size 16px
+				color #000000
+				margin-left 10px
+				padding-top 5px
 		&__list
 			display flex
 			justify-content space-between
 			font-size 16px
 			font-weight 400
+			+to-width(1024px)
+				flex-direction column
+				justify-content flex-start
 		&__item
 			margin-right 30px
 			position relative
 			cursor pointer
+			+to-width(1080px)
+				margin-right 25px
+			+to-width(1024px)
+				margin-bottom 45px
+				font-size 22px
 			&:last-child
 				margin-right 0
 			&:after
@@ -55,6 +109,8 @@
 					top 7px
 					background-image url('../images/arrow-bottom.png')
 					t()
+					+to-width(1024px)
+						display none
 				&--active
 					&:before
 						transform rotate(180deg)
@@ -63,17 +119,32 @@
 				left 0
 				bottom -40px
 				opacity 0
-				t()
 				&--active
 					opacity 1
 					bottom -35px
 		&__link
 			color black
+	&__items
+		display flex
+		justify-content space-between
+		align-items center
+		width 250px
+		position relative
+		z-index 12
+		+to-width(1024px)
+			width 300px
+		+to-width(600px)
+			height 100%
+			width auto
 	.mobile
 		display flex
 		align-items center
 		position relative
 		cursor pointer
+		+to-width(600px)
+			border-left 1px solid #e8e8e8
+			height 100%
+			padding 0 18px
 		&:before
 			content ''
 			position absolute
@@ -83,11 +154,16 @@
 			top 14px
 			background-image url('../images/arrow-bottom.png')
 			t()
+		+to-width(600px)
+			&:before
+				display none
 		&--active
 			&:before
 				transform rotate(180deg)
 		&__wrap
 			margin-left 11px
+			+to-width(600px)
+				display none
 		&__title
 			font-size 25px
 			font-weight 700
@@ -100,15 +176,35 @@
 			left 66px
 			bottom -40px
 			opacity 0
-			t()
+			+to-width(600px)
+				left 25px
 			&--active
 				opacity 1
 				bottom -25px
+				+to-width(600px)
+					bottom -3px
+	.account
+		+to-width(1080px)
+			margin 0 15px
+		+to-width(600px)
+			display none
 	.basket
 		position relative
+		+to-width(1180px)
+			padding-right 18px
+		+to-width(600px)
+			padding-left 18px
+			padding-right 28px
+			border-left 1px solid #e8e8e8
+			height 100%
+			display flex
+			align-items center
+			justify-content center
 		&__link
 			cursor pointer
 			margin-left -20px
+			+to-width(600px)
+				margin-left 0
 		&__circle
 			width 20px
 			height 20px
@@ -124,12 +220,37 @@
 			font-size 12px
 			padding-top 2px
 			font-weight 700
+			+to-width(1180px)
+				right 0px
+			+to-width(600px)
+				top 17px
+				right 10px
 		&__arrow
 			position absolute
 			left -10px
 			bottom -40px
 			opacity 0
-			t()
+			+to-width(600px)
+				left 30px
 			&--active
 				opacity 1
 				bottom -31px
+				+to-width(600px)
+					bottom -3px
+	.gamburger
+		display none
+		height 100%
+		align-items center
+		padding-left 18px
+		border-left 1px solid #e8e8e8
+		cursor pointer
+		+to-width(600px)
+			display flex
+		&__icon-close
+			display none
+			&--visible
+				display block
+		&__icon
+			display block
+			&--close
+				display none

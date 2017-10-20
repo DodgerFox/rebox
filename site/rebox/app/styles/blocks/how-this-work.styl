@@ -1,9 +1,13 @@
 .how-this-work
 	margin-bottom 55px
+	+to-width(440px)
+		margin-bottom 28px
 	.stages
 		margin-top 44px
 		display flex
 		justify-content space-between
+		+to-width(700px)
+			flex-wrap wrap
 		&__item
 			display flex
 			width 25%
@@ -18,15 +22,49 @@
 				left -40px
 				top 30px
 				background-image url('../images/icon-next.png')
+			+to-width(1024px)
+				flex-direction column
+			+to-width(700px)
+				width 70%
+				margin-left 15%
+				flex-direction row
+				padding-bottom 30px
+				&:before
+					top -20px
+					left 15px
+					transform rotate(90deg)
+				&:first-child
+					transform translateX(-5px)
+				&:last-child
+					transform translateX(-5px)
+			+to-width(460px)
+				margin-left 0
+				width 100%
+				&:first-child
+					margin-left 0
+				&:last-child
+					margin-left 0
+			
 			&:first-child
 				&:before
 					display none
 			&-image
 				margin-right 20px
+				+to-width(1024px)
+					min-height 60px
+					margin-right 0
+				+to-width(700px)
+					margin-right 13px
+					min-height inherit
 			&-text
 				font-size 18px
 				font-weight 400
 				line-height 20px
+				+to-width(1024px)
+					text-align center
+					padding-top 10px
+				+to-width(700px)
+					text-align left
 	.how-slider
 		margin-top 55px
 		width 100%
@@ -39,46 +77,72 @@
 			background-size cover
 			justify-content center
 			align-items center
+			+to-width(440px)
+				height 236px
 			&-title
 				display inline-block
 				font-size 40px
 				font-weight 700
+				padding-bottom 20px
+				+to-width(600px)
+					font-size 30px
 			&-btn
-				margin-top 20px
 				color white
 				background-color $main
 				padding 19px 49px
 				font-size 20px
 				font-weight 400
-				border 3px solid transparent
+				border 2px solid transparent
 				cursor pointer
 				t()
 				&:hover
 					color $main
-					border 3px solid $main
+					border 2px solid $main
 					background-color transparent
-		&__pagination
-			width 100%
-			height 297px
-			top 0
-			left 0
-			z-index 2
-			position absolute
+	.pagination
+		width 100%
+		height 297px
+		top 0
+		left 0
+		position absolute
+		display flex
+		align-items center
+		&__box
 			display flex
-			align-items center
-			.box
-				display flex
-				justify-content space-between
-				padding-left 0
-			&__left
-				margin-left 28px
-				cursor pointer
-				&.swiper-button-disabled
-					opacity 0.2
-					cursor default
-			&__right
-				margin-right 28px
-				cursor pointer
-				&.swiper-button-disabled
-					opacity 0.2
-					cursor default
+			justify-content space-between
+			padding-left 0
+			width 100%
+			z-index 4
+		&__left
+			margin-left 28px
+			cursor pointer
+			+to-width(600px)
+				&-image
+					width 9px
+			&.swiper-button-disabled
+				opacity 0.3
+				cursor default
+		&__right
+			margin-right 28px
+			cursor pointer
+			+to-width(700px)
+				margin-right 0
+			+to-width(600px)
+				&-image
+					width 9px
+			&.swiper-button-disabled
+				opacity 0.3
+				cursor default
+	&__dots
+		z-index 5
+		position absolute
+		display flex
+		justify-content center
+		bottom 28px!important
+		.swiper-pagination-bullet
+			width 16px
+			height 16px
+			border 1px solid #d8d8d8
+			background-color #ffffff
+			&-active
+				background-color #b99359

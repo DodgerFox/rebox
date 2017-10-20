@@ -1,37 +1,114 @@
 .our-cooks
 	padding-top 64px
-	padding-bottom 50px
+	padding-bottom 100px
 	background-color #f6f6f6
+	position relative
 	&__slider
-		margin-top 52px
+		padding-top 52px
 		display flex
-		background-color white
-		box-shadow 0 0 27px rgba(0, 0, 0, 0.09)
 	&__slide
-		width 844px
 		height 300px
+		padding 0 15px
+		+to-width(840px)
+			height auto
+		.box-mini
+			display flex
+			background-color white
+			box-shadow 0 0 27px rgba(0, 0, 0, 0.09)
+			+to-width(840px)
+				flex-direction column
 		&-image
 			width 35%
 			height 300px
 			background-color #333
+			+to-width(840px)
+				width 100%
+				background-size cover
+			+to-width(700px)
+				height 200px
+			+to-width(400px)
+				height 138px
 		&-content
 			text-align left
 			width 65%
 			height 100%
-			padding 42px 36px
+			padding 0px 36px
+			padding-top 38px
+			+to-width(840px)
+				padding 28px 36px
+				width 100%
+			+to-width(700px)
+				padding 28px 24px
 		&-title
 			font-size 25px
 			font-weight 700
 			line-height 30px
 			letter-spacing -0.25px
+			padding-bottom 16px
+			+to-width(840px)
+				padding-bottom 13px
 		&-text
 			font-size 16px
 			font-weight 400
 			line-height 22px
 			letter-spacing 0.16px
 			color #000000
-			margin-top 21px
+			+to-width(700px)
+				font-size 16px
+				line-height 22px
 			&.gray-text
 				color #848484
 				letter-spacing -0.16px
-				margin-top 16px
+				padding-bottom 21px
+				+to-width(840px)
+					padding-bottom 16px
+	.pagination
+		width 100%
+		height 297px
+		top 0
+		left 0
+		padding-top 90px
+		position absolute
+		display flex
+		align-items center
+		.box
+			display flex
+			justify-content space-between
+			padding-left 0
+			width 100%
+			z-index 4
+		&__left
+			margin-left 28px
+			cursor pointer
+			+to-width(600px)
+				&-image
+					width 9px
+			&.swiper-button-disabled
+				opacity 0.2
+				cursor default
+		&__right
+			margin-right 28px
+			cursor pointer
+			+to-width(700px)
+				margin-right 0px
+			+to-width(600px)
+				&-image
+					width 9px
+			&.swiper-button-disabled
+				opacity 0.2
+				cursor default
+	&__dots
+		z-index 5
+		position absolute
+		display flex
+		justify-content center
+		width 100%
+		bottom 50px!important
+		.swiper-pagination-bullet
+			width 16px
+			height 16px
+			margin-right 7px
+			border 1px solid #d8d8d8
+			background-color #ffffff
+			&-active
+				background-color #b99359
