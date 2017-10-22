@@ -1,5 +1,5 @@
 .feedbacks
-	padding-top 45px
+	padding-top 30px
 	padding-bottom 50px
 	+to-width(840px)
 		padding-bottom 62px
@@ -9,6 +9,7 @@
 		justify-content space-between
 		margin-left -15px
 		margin-right -15px
+		padding-bottom 15px
 		+to-width(1150px)
 			margin-right -8px
 			margin-left -8px
@@ -17,6 +18,7 @@
 	.post
 		width 25%
 		padding 0 15px
+		height initial
 		+to-width(1150px)
 			padding 0 8px
 		+to-width(1024px)
@@ -31,6 +33,7 @@
 			width 100%
 			border 1px solid #e1e1e1
 			height 100%
+			position relative
 			t()
 			&:hover
 				box-shadow 0 5px 10px 1px rgba(0, 0, 0, 0.39)
@@ -57,6 +60,7 @@
 				background-size cover
 			&-title
 				font-size 12px
+				text-align left
 				padding-bottom 2px
 			&-text
 				font-size 11px
@@ -70,6 +74,9 @@
 			display flex
 			justify-content center
 			align-items center
+			t()
+			&:hover
+				background-color #2d82d4
 		
 		&__image
 			height 258px
@@ -79,7 +86,12 @@
 		
 		&-content
 			padding 10px 15px
-			padding-bottom 24px
+			padding-bottom 28px
+			&__icon-wrap
+				position absolute
+				width 30px
+				bottom 4px
+				right 6px
 			&__item
 				margin-bottom 2px
 				display flex

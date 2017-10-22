@@ -32,7 +32,6 @@
 			font-size 17px
 			font-weight 700
 			text-transform uppercase
-			padding-bottom 23px
 			+to-width(500px)
 				text-align center
 				padding-bottom 14px
@@ -40,6 +39,7 @@
 			font-size 16px
 			font-weight 400
 			line-height 20px
+			padding-top 23px
 			+to-width(500px)
 				text-align center
 		&-wrap
@@ -88,7 +88,7 @@
 			color #848484
 			t()
 			&:focus
-				border 1px solid #b99359
+				border 1px solid $secondary
 			+to-width(500px)
 				margin-bottom 10px
 				width 100%
@@ -102,5 +102,9 @@
 			color white
 			font-weight 400
 			t()
+			&:hover
+				background-color $secondary
+				border 2px solid $secondary
+				color white
 			+to-width(500px)
 				width 80%

@@ -1,0 +1,196 @@
+.weeks
+	padding-bottom 42px
+	&__headering
+		padding-bottom 23px
+	&__text
+		color #848484
+		font-size 18px
+		text-align center
+		padding-bottom 28px
+	&__slide
+		width 100%
+		display flex
+		flex-direction column
+		align-items center
+		overflow hidden
+		padding-bottom 110px
+		border-bottom 1px solid #e9e9e9
+	&-form
+		width 730px
+		margin 0 auto
+		display flex
+		justify-content space-between
+		position relative
+		z-index 2
+		&__select
+			width 160px
+			height 54px
+			border 1px solid #cfcfcf
+			background-color #ffffff
+			font-size 18px
+			font-weight 400
+			color #000000
+			padding 0 10px
+			cursor pointer
+		&__btn
+			width 220px
+			height 54px
+			background-color $main
+			color #ffffff
+			font-size 20px
+			font-weight 400
+			display flex
+			align-items center
+			justify-content center
+			border 2px solid $main
+			cursor pointer
+			t()
+			&:hover
+				background-color transparent
+				color $main
+		&__change
+			position absolute
+			color #848484
+			font-size 16px
+			font-weight 400
+			text-decoration underline
+			top 17px
+			right -138px
+			pointer-events none
+			&:hover
+				text-decoration none
+	.slide-in
+		width 730px
+		padding-top 40px
+		overflow visible
+		&__pagination
+			width 100%
+			display flex
+			justify-content center
+			&-arrows
+				padding 0 83px
+				padding-top 130px
+			&-wrap
+				width 730px
+				display flex
+				justify-content space-between
+			&-item
+				color #000000
+				font-size 20px
+				font-weight 400
+				cursor pointer
+				padding-bottom 8px
+				position relative
+				t()
+				
+				&:after
+					content ''
+					position absolute
+					width 100%
+					height 4px
+					background-color transparent
+					left 0
+					bottom 0
+					t()
+				&:hover
+					&:after
+						background-color $secondary
+				&--active
+					&:after
+						background-color $secondary
+		&__items
+			width 100%
+			padding-top 25px
+		&__item
+			height 487px
+			box-shadow 0 0 27px rgba(0, 0, 0, 0.09)
+			background-color #333
+	.slide-item
+		padding 0 20px
+		background-size cover
+		opacity 0.5
+		t()
+		&__characters
+			width 100%
+			height 80px
+			background white
+			padding 22px 20px
+			position absolute
+			bottom -80px
+			opacity 0
+			transform translateY(30px)
+			t()
+			&-item
+				width 100%
+				display flex
+				justify-content space-between
+				padding-bottom 18px
+			&-time
+				display flex
+				align-items center
+				&-icon
+					margin-right 9px
+					max-width 14px
+					max-height 14px
+			&-options
+				color #848484
+				font-size 15px
+			&-links
+				display flex
+			&-link
+				color #848484
+				font-size 16px
+				margin-right 20px
+				text-decoration underline
+				cursor pointer
+				&:hover
+					text-decoration none
+				&:last-child
+					margin-right 0
+		&__ingredients
+			left 30px
+			right 30px
+			background-color white
+			padding 25px
+			display flex
+			position absolute
+			bottom 30px
+			opacity 0
+			transform translateY(30px)
+			t()
+			&--open
+				transform translateY(0px)
+				opacity 1
+			&-left
+				width 50%
+				display flex
+				flex-direction column
+				align-items left
+				font-size 14px
+				padding-right 30px
+				text-align left
+			&-need
+				margin-top 15px
+				color #000000
+				font-weight 700
+				&.need-gray
+					color #848484
+					font-weight 400
+					margin-top 4px
+			&-right
+				text-align left
+			&-title
+				font-size 25px
+				font-weight 700
+				padding-bottom 20px
+				margin-top 5px
+			&-item
+				font-size 16px
+				font-weight 400
+				line-height 25px
+			
+		&--active
+			opacity 1
+			.slide-item__characters
+				transform translateY(0px)
+				opacity 1

@@ -17,9 +17,9 @@ header.header
 						a.navigation__link(href="#") Сертификаты
 					li.navigation__item
 						a.navigation__link(href="#") О сервисе
-				//- .navigation__account
-				//- 	img(src="assets/images/user-mobile.png").navigation__account-image
-				//- 	.navigation__account-text Личный кабинет
+				.navigation__account
+					img(src="assets/images/user-mobile.png").navigation__account-image
+					.navigation__account-text Личный кабинет
 			.header__items
 				.mobile
 					img.mobile__icon(src="assets/images/phone.png")
@@ -50,6 +50,9 @@ header.header
 			a.dropdown-header__link(href="#")
 				img.dropdown-header__icon(src="assets/images/icon-carrot.png")
 				.dropdown-header__text Вегетарианский сет
+			.dropdown-header__back
+				img(src="assets/images/icon-next.png").dropdown-header__back-icon
+				.dropdown-header__back-text Назад
 	.dropdown
 		.box
 			.dropdown-mobile
@@ -57,7 +60,7 @@ header.header
 				.dropdown-mobile__text Мы перезвоним вам в рабочее время с 09:00 до 17:30
 				.dropdown-mobile__title Напишите нам:
 				.dropdown-mobile__items
-					a.dropdown-mobile__items-link(href="tel:+375 (29) 316-01-01") +375 (29) 316-01-01
+					a.dropdown-mobile__items-link(href="tel:+375293160101") +375 (29) 316-01-01
 					a.dropdown-mobile__items-link(href="#")
 						img.dropdown-mobile__items-icon(src="assets/images/icon-telegram.png")
 					a.dropdown-mobile__items-link(href="#")
@@ -73,11 +76,15 @@ header.header
 				.basket-drop__item
 					.basket-drop__subtitle Куриные крылья в маринаде
 					.basket-drop__text 30,50 руб.
-					img(src="assets/images/svg/delete-item.svg").basket-drop__delete
+					.basket-drop__delete
+						.basket-drop__delete-line
+						.basket-drop__delete-line
 				.basket-drop__item
 					.basket-drop__subtitle Куриные крылья в маринаде
 					.basket-drop__text 30,50 руб.
-					img(src="assets/images/svg/delete-item.svg").basket-drop__delete
+					.basket-drop__delete
+						.basket-drop__delete-line
+						.basket-drop__delete-line
 				.basket-drop__item.basket-drop-footer
 					.basket-drop-footer__item
 						.basket-drop-footer__title Доставка

@@ -5,24 +5,44 @@
 	position absolute
 	top -20px
 	z-index 18
-	left 0
+	right 0
 	box-shadow 0px -18px 50px
 	t()
 	+to-width(600px)
-		display none
+		position fixed
+		width 266px
+		height 100vh
+		right 0px
+		transform translateX(266px)
+		background-color white
+		top 60px
+		z-index 20
+		box-shadow none
 	&.dropdown-header_droped
 		transform translateY(103px)
+		+to-width(600px)
+			transform translateY(0px)
+			transform translateX(0px)
 	.box
 		display flex
 		align-items center
 		justify-content center
 		height 100%
+		+to-width(600px)
+			display flex
+			flex-direction column
+			align-items flex-start
+			justify-content flex-start
 	&__link
 		margin-right 48px
 		display flex
 		align-items center
 		+to-width(600px)
 			margin-right 0
+			margin-top 25px
+			padding-bottom 25px
+			border-bottom 1px solid #eaeaea
+			width 100%
 		&:last-child
 			margin-right 0
 		&:hover
@@ -35,4 +55,16 @@
 		font-weight 400
 		color black
 		t()
-		
+	&__back
+		display none
+		cursor pointer
+		+to-width(600px)
+			display flex
+			align-items center
+			margin-top 20px
+			&-text
+				font-size 16px
+				margin-left 10px
+			&-icon
+				transform rotate(180deg)
+				height 13px

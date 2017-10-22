@@ -6,15 +6,19 @@
 		justify-content space-between
 		align-items flex-start
 		padding-top 44px
+		padding-bottom 30px
 	&__item
 		width 25%
 		display flex
+		align-items flex-start
 		padding-right 40px
 		+to-width(1024px)
 			flex-direction column
 			align-items center
 			padding-right 20px
 		+to-width(840px)
+			flex-direction row
+			align-items flex-start
 			width 100%
 		&:last-child
 			padding-right 0
@@ -24,16 +28,26 @@
 			font-size 23px
 			font-weight 700
 			line-height 20px
+			text-align left
 			+to-width(1024px)
 				padding-top 15px
 				text-align center
+			+to-width(840px)
+				text-align left
 		&-text
 			margin-top 6px
 			font-size 16px
 			line-height 20px
+			text-align left
 			+to-width(1024px)
 				text-align center
+			+to-width(840px)
+				text-align left
 	&__pagination
 		display none
 		+to-width(840px)
 			display flex
+	
+	&__dots
+		+to-width(840px)
+			bottom -0px!important

@@ -35,31 +35,33 @@
 		+to-width(1024px)
 			display flex
 			flex-direction column
-			justify-content space-between
 			position absolute
 			z-index 10
 			height 100vh
-			top 60px
 			right 0px
 			width 266px
-			background white
+			background-color #f9f9f9
 			padding-top 60px
 			padding-left 36px
 			transform translateX(270px)
+			top 70px
 			t()
 			&--active
 				transform translateX(0)
+		+to-width(600px)
+			top 60px
 		&__account
 			width 266px
 			height 60px
-			bottom 0px
-			right 0
-			position fixed
 			background-color #e8e8e8
-			display flex
 			justify-content center
 			align-items center
 			cursor pointer
+			margin-left -36px
+			margin-top 12px
+			display none
+			+to-width(1024px)
+				display flex
 			&-text
 				font-size 16px
 				color #000000
@@ -96,9 +98,6 @@
 			&:hover
 				&:after
 					width 100%
-			&--active
-				&:after
-					width 100%
 			&-drop
 				&:before
 					content ''
@@ -114,6 +113,8 @@
 				&--active
 					&:before
 						transform rotate(180deg)
+					&:after
+						width 100%
 			&-arrow
 				position absolute
 				left 0
@@ -132,7 +133,7 @@
 		position relative
 		z-index 12
 		+to-width(1024px)
-			width 300px
+			width 280px
 		+to-width(600px)
 			height 100%
 			width auto
@@ -141,17 +142,22 @@
 		align-items center
 		position relative
 		cursor pointer
+		+to-width(1024px)
+			margin-right 40px
 		+to-width(600px)
 			border-left 1px solid #e8e8e8
 			height 100%
+			margin-right 0px
 			padding 0 18px
 		&:before
 			content ''
 			position absolute
-			width 8px
-			height 4px
+			width 12px
+			height 36px
 			right -20px
-			top 14px
+			top 0px
+			background-position center
+			background-repeat no-repeat
 			background-image url('../images/arrow-bottom.png')
 			t()
 		+to-width(600px)
@@ -174,19 +180,17 @@
 		&__arrow
 			position absolute
 			left 66px
-			bottom -40px
+			bottom -25px
 			opacity 0
 			+to-width(600px)
 				left 25px
 			&--active
 				opacity 1
-				bottom -25px
+				transition-delay 0.3s
 				+to-width(600px)
 					bottom -3px
 	.account
-		+to-width(1080px)
-			margin 0 15px
-		+to-width(600px)
+		+to-width(1024px)
 			display none
 	.basket
 		position relative
@@ -228,15 +232,16 @@
 		&__arrow
 			position absolute
 			left -10px
-			bottom -40px
+			bottom -31px
 			opacity 0
 			+to-width(600px)
 				left 30px
 			&--active
 				opacity 1
-				bottom -31px
+				transition-delay 0.3s
 				+to-width(600px)
 					bottom -3px
+
 	.gamburger
 		display none
 		height 100%
@@ -244,7 +249,8 @@
 		padding-left 18px
 		border-left 1px solid #e8e8e8
 		cursor pointer
-		+to-width(600px)
+		width 41px
+		+to-width(1024px)
 			display flex
 		&__icon-close
 			display none
