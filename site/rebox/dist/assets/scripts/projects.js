@@ -55,6 +55,42 @@ var swiperCooks = new Swiper('.our-cooks__slider', {
         }
     });
 
+function openWindowsInSlider() {
+  var buttonRecipe = $('.slide-item--active .slide-item__characters-link--recipe'),
+              buttonIngred = $('.slide-item--active .slide-item__characters-link--ingred'),
+              blockRecipe = $('.slide-item--active .slide-item__ingredients_recipe'),
+              blockIngred = $('.slide-item--active .slide-item__ingredients_ingred'),
+              indexRecipe = false,
+              indexIngred = false;
+          
+          $(buttonRecipe).click(function () {
+            if (indexRecipe == false) {
+              $(blockIngred).removeClass('slide-item__ingredients--open')
+              indexIngred = false
+              $(blockRecipe).addClass('slide-item__ingredients--open')
+              indexRecipe = true
+            }else{
+              $(blockIngred).removeClass('slide-item__ingredients--open')
+              indexIngred = false
+              $(blockRecipe).removeClass('slide-item__ingredients--open')
+              indexRecipe = false
+            }
+          })
+          $(buttonIngred).click(function () {
+            if (indexIngred == false) {
+              $(blockRecipe).removeClass('slide-item__ingredients--open')
+              indexRecipe = false
+              $(blockIngred).addClass('slide-item__ingredients--open')
+              indexIngred = true
+            }else{
+              $(blockRecipe).removeClass('slide-item__ingredients--open')
+              indexRecipe = false
+              $(blockIngred).removeClass('slide-item__ingredients--open')
+              indexIngred = false
+            }
+          })
+}
+
 //slider for section 'weeks'
 var bigRenderIndex = -1;
 var swiperWeeks = new Swiper('.weeks__slide-in', {
@@ -93,41 +129,10 @@ var swiperWeeks = new Swiper('.weeks__slide-in', {
         },
         on:{
           slideChangeTransitionEnd: function () {
-              var buttonRecipe = $('.slide-item--active .slide-item__characters-link--recipe'),
-              buttonIngred = $('.slide-item--active .slide-item__characters-link--ingred'),
-              blockRecipe = $('.slide-item--active .slide-item__ingredients_recipe'),
-              blockIngred = $('.slide-item--active .slide-item__ingredients_ingred'),
-              indexRecipe = false,
-              indexIngred = false;
-          
-          $(buttonRecipe).click(function () {
-            if (indexRecipe == false) {
-              $(blockIngred).removeClass('slide-item__ingredients--open')
-              indexIngred = false
-              $(blockRecipe).addClass('slide-item__ingredients--open')
-              indexRecipe = true
-            }else{
-              $(blockIngred).removeClass('slide-item__ingredients--open')
-              indexIngred = false
-              $(blockRecipe).removeClass('slide-item__ingredients--open')
-              indexRecipe = false
-            }
-          })
-          $(buttonIngred).click(function () {
-            if (indexIngred == false) {
-              $(blockRecipe).removeClass('slide-item__ingredients--open')
-              indexRecipe = false
-              $(blockIngred).addClass('slide-item__ingredients--open')
-              indexIngred = true
-            }else{
-              $(blockRecipe).removeClass('slide-item__ingredients--open')
-              indexRecipe = false
-              $(blockIngred).removeClass('slide-item__ingredients--open')
-              indexIngred = false
-            }
-          })
-
-
+            openWindowsInSlider()
+          },
+          init: function () {
+            openWindowsInSlider()
           }
         }
         
