@@ -354,7 +354,14 @@ function mobileCooks() {
   })
 
   $(button).click(function () {
-    $(this).siblings('.our-cooks__slide-text').addClass('our-cooks__slide-text--open')
-    $(this).addClass('hidden')
+    var itemText = $(this).siblings('.our-cooks__slide-text');
+
+    if ($(itemText).hasClass('our-cooks__slide-text--open')) {
+      $(itemText).removeClass('our-cooks__slide-text--open')
+      $(this).html('Читать полностью')
+    }else{
+      $(itemText).addClass('our-cooks__slide-text--open')
+      $(this).html('Скрыть')
+    }
   })
 }
