@@ -52,6 +52,17 @@ var swiperCooks = new Swiper('.our-cooks__slider', {
         spaceBetween: -200,
         loop: true,
         speed: 500,
+        breakpoints: {
+          1550: {
+            spaceBetween: -100
+          },
+          1450: {
+            spaceBetween: -100
+          },
+          1300: {
+            spaceBetween: 0
+          }
+        },
         navigation: {
           nextEl: '.our-cooks__pagination .pagination__right',
           prevEl: '.our-cooks__pagination .pagination__left',
