@@ -37,11 +37,14 @@
 			padding 0px 36px
 			padding-top 38px
 			padding-bottom 18px
+			position relative
 			+to-width(840px)
 				padding 28px 36px
+				padding-bottom 66px
 				width 100%
 			+to-width(700px)
-				padding 28px 24px
+				padding-left 24px
+				padding-right 24px
 		&-title
 			font-size 25px
 			font-weight 700
@@ -56,6 +59,12 @@
 			line-height 22px
 			letter-spacing 0.16px
 			color #000000
+			overflow hidden
+			transition 0.5s max-height
+			&--open
+				max-height 500px!important
+			+to-width(840px)
+				max-height 90px
 			+to-width(700px)
 				font-size 16px
 				line-height 22px
@@ -65,6 +74,23 @@
 				padding-bottom 21px
 				+to-width(840px)
 					padding-bottom 16px
+		&-more
+			display none
+			position absolute
+			bottom 32px
+			left 36px
+			color #848484
+			font-size 14px
+			font-weight 400
+			text-decoration underline
+			cursor pointer
+			t()
+			&:hover
+				text-decoration none
+			+to-width(840px)
+				display block
+			+to-width(700px)
+				left 24px
 	.pagination
 		width 100%
 		height 297px

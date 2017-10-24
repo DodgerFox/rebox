@@ -2,6 +2,7 @@ window.onload = function () {
   initSwiperMini()
   resizeWindow()
   bigDropdownWrap()
+  mobileCooks()
 }
 
 //slider for first-screen
@@ -48,6 +49,7 @@ var swiperCooks = new Swiper('.our-cooks__slider', {
         },
         paginationClickable: true,
         slidesPerView: 1,
+        loop: true,
         speed: 500,
         navigation: {
           nextEl: '.our-cooks__pagination .pagination__right',
@@ -228,6 +230,7 @@ function bigDropdownWrap() {
             dropdownMobileClose()
           if (window.innerWidth > 600) {
             $(arrowMenu).addClass('navigation__item-arrow--active')
+            mobileMenuClose()
           }else{
 
           }
@@ -336,4 +339,22 @@ function resizeWindow() {
   window.onresize = function () {
     initSwiperMini()
   }
+}
+function mobileCooks() {
+  var content = $('.our-cooks__slide-text'),
+      text = $('.our-cooks__slide-text'),
+      button = $('.our-cooks__slide-more');
+  
+  $.each( content, function ( index, element ) {
+    var elementContent = $(element).text().length;
+    if ( elementContent > 156 ) {
+      console.log( element, index )
+
+    }
+  })
+
+  $(button).click(function () {
+    $(this).siblings('.our-cooks__slide-text').addClass('our-cooks__slide-text--open')
+    $(this).addClass('hidden')
+  })
 }
