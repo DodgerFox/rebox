@@ -49,6 +49,7 @@ var swiperCooks = new Swiper('.our-cooks__slider', {
         },
         paginationClickable: true,
         slidesPerView: 1,
+        spaceBetween: -200,
         loop: true,
         speed: 500,
         navigation: {

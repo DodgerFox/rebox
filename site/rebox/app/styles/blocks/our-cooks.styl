@@ -6,16 +6,31 @@
 	&__slider
 		padding-top 52px
 		display flex
+		justify-content center
+		max-width 1910px
 	&__slide
 		padding 0 15px
+		justify-content normal
 		+to-width(840px)
 			height auto
 		.box-mini
 			display flex
+			margin-left auto
+			margin-right auto
 			background-color white
 			box-shadow 0 0 27px rgba(0, 0, 0, 0.09)
+			transition 4s margin
 			+to-width(840px)
 				flex-direction column
+		&.swiper-slide-prev
+			filter blur(8px)
+			.box-mini
+				margin-right 0
+		&.swiper-slide-next
+			filter blur(8px)
+			.box-mini
+				margin-left 0
+		
 		&-image
 			width 35%
 			min-height 100%
